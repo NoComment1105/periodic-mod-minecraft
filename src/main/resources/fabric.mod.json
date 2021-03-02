@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "tutorial",
+  "version": "${version}",
+
+  "name": "Periodic",
+  "description": "A Mod designed to add common-ish elements from the periodic table to Minecraft",
+  "authors": [
+    "NoComment1105"
+  ],
+  "contact": {
+    "homepage": "http://nocomment-mc.webador.com",
+    "sources": ""
+  },
+
+  "license": "lgpl-3.0",
+  "icon": "assets/periodic/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.NoComment1105.periodic.periodic"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
