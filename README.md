@@ -1,5 +1,5 @@
 # periodic-mod-fabric
-![Github license](https://img.shields.io/github/license/NoComment1105/.svg)
+![Github license](https://img.shields.io/github/license/NoComment1105/periodic-mod-fabric.svg)
 ![Github Issues](https://img.shields.io/github/issues/NoComment1105/periodic-mod-fabric.svg)
 ![Github Tag](https://img.shields.io/github/tag/NoComment1105/periodic-mod-fabric.svg)
 [![Discord Chat](https://img.shields.io/badge/Chat%20on-discord-7289DA)](https://discord.gg/28N2Eeq2tT)
