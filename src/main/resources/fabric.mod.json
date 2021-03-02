@@ -23,6 +23,7 @@
     ]
   },
   "mixins": [
+    "periodic.mixins.json"
   ],
 
   "depends": {

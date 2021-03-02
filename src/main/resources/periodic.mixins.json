@@ -1,13 +1,13 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.fabricmc.example.mixin",
+  "package": "com.NoComment1105.periodic.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "oregen$DefaultBiomeFeaturesMixin"
   ],
-  "client": [
-    "ExampleMixin"
-  ],
+  "client": [],
+  "server": [],
   "injectors": {
     "defaultRequire": 1
   }
