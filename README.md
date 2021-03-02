@@ -10,7 +10,7 @@ Elements from the periodic table in Minecraft 1.16.x
 This mod adds elements from the real world into minecraft, making the game, a bit more realistic
 
 ### Features
-Adds Uranium Lumps, Uranium Ore and Uranium Block
+Adds Uranium Lumps, Uranium Ore and Uranium Blocks
 
 **MORE COMING SOON**
 
@@ -24,5 +24,3 @@ Adds Uranium Lumps, Uranium Ore and Uranium Block
 ### Versioning
 This pack is 1.16.x at it's oldest. I am **NOT** going to back port any of these changes to any other versions
 I will try my hardest to updates this pack, in its latest release at the time, on the day of the next version
-
-
