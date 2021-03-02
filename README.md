@@ -1,4 +1,4 @@
-# Easier-items-datapck
+# periodic-mod-fabric
 ![Github license](https://img.shields.io/github/license/NoComment1105/periodic-mod-fabric.svg)
 ![Github Issues](https://img.shields.io/github/issues/NoComment1105/periodic-mod-fabric.svg)
 ![Github Tag](https://img.shields.io/github/tag/NoComment1105/periodic-mod-fabric.svg)
@@ -6,9 +6,8 @@
 
 Elements from the periodic table in Minecraft 1.16.x
 
-### What is the purpose of this datapack?
-You can get a lot of tool drops from Minecraft mobs. and usually they come on iron or gold tools/weapons/armour; and that can be a pain becuase it  renders then useless usually. But this pack here allows you to put any tool/weapon/armour piece in the smithing table and upgrade it to the next level
-
+### What is the purpose of this Mod?
+This mod adds elements from the real world into minecraft, making the game, a bit more realistic
 
 ### Features
 Adds Uranium Lumps, Uranium Ore and Uranium Block
