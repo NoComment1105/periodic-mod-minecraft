@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "tutorial",
+  "id": "periodic",
   "version": "${version}",
 
   "name": "Periodic",
@@ -10,7 +10,7 @@
   ],
   "contact": {
     "homepage": "http://nocomment-mc.webador.com",
-    "sources": ""
+    "sources": "https://www.github.com/NoComment1105/periodic-mod-fabric"
   },
 
   "license": "lgpl-3.0",
@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.NoComment1105.periodic.Periodic"
+      "com.NoComment1105.Periodic.periodic"
     ]
   },
   "mixins": [
@@ -27,7 +27,7 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.7.4",
+    "fabricloader": ">=0.11.2",
     "fabric": "*",
     "minecraft": "1.16.x"
   },
