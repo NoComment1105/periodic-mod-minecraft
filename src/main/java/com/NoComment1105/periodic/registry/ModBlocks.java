@@ -9,13 +9,10 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-
 public class ModBlocks {
-
     //creating a block NEED REPEATING FOR EACH BLOCK
     public static final Block URANIUM_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).breakByTool(FabricToolTags.PICKAXES, 2)
-            .requiresTool().strength(5f,35f).sounds(BlockSoundGroup.METAL).luminance(4));
-
+            .requiresTool().strength(5f, 35f).sounds(BlockSoundGroup.METAL).luminance(4));
     public static final Block URANIUM_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool().strength(3f, 15f).sounds(BlockSoundGroup.STONE).luminance(4));
 

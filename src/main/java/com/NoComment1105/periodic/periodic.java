@@ -15,22 +15,19 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 
+import static net.fabricmc.fabric.impl.networking.NetworkingImpl.MOD_ID;
 public class periodic implements ModInitializer {
-
-    //defining mod name
     public static final String MOD_ID = "periodic";
-
     //creates the creative tab
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "general"), () -> new ItemStack(ModItems.URANIUM));
-
     public static final ConfiguredFeature<?, ?> ORE_URANIUM_ORE_OVERWORLD = Feature.ORE
             .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.URANIUM_ORE.getDefaultState(),
                     3)) // vein size
-                    .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
+            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0, // bottom offset
                     12, // min y level
                     24))) // max y level
-                    .spreadHorizontally().repeat(10); // number of veins per chunk
+            .spreadHorizontally().repeat(10); // number of veins per chunk
 
     @Override
     public void onInitialize() {
@@ -39,6 +36,5 @@ public class periodic implements ModInitializer {
         ModBlocks.registerBlocks();
         //registering my ore generation
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("periodic", "ore_uranium_ore_overworld"), ORE_URANIUM_ORE_OVERWORLD);
-
     }
 }

@@ -28,13 +28,12 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:uranium",
+              "name": "periodic:uranium",
               "functions": [
                 {
                   "function": "minecraft:set_count",
                   "count": {
-                    "min": 4,
-                    "max": 5
+                    "min": 1
                   }
                 },
                 {
