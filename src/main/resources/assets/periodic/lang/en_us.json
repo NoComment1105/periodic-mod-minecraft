@@ -1,6 +1,6 @@
 {
-  "item.periodic.uranium": "Uranium Lump",
+  "item.periodic.uranium": "Uranium Ingot",
   "block.periodic.uranium_block": "Uranium Block",
-  "itemGroup.periodic.general": "[TEMPPLACEHOLD]",
-  "itemGroup.periodic.other": "[TEMPPLACEHOLD]"
+  "block.periodic.uranium_ore": "Uranium Ore",
+  "itemGroup.periodic.general": "Periodic"
 }
