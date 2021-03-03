@@ -9,7 +9,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "periodic:uraniun_ore",
+              "name": "periodic:uranium_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
