@@ -25,8 +25,8 @@ public class periodic implements ModInitializer {
                     3)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0, // bottom offset
-                    12, // min y level
-                    24))) // max y level
+                    6, // min y level
+                    36))) // max y level
             .spreadHorizontally().repeat(10); // number of veins per chunk
 
     @Override
