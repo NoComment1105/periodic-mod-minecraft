@@ -10,7 +10,7 @@ import net.minecraft.util.registry.Registry;
 
 public class RegisterArmour {
 
-    public static final ArmorMaterial customArmorMaterial = new CustomArmorMaterial();
+    public static final ArmorMaterial customArmorMaterial = new UraniumArmour();
     public static final Item URANIUM = new Item(new Item.Settings().group(periodic.ITEM_GROUP));
     // If you made a new material, this is where you would note it.
     public static final Item URANIUM_HELMET = new ArmorItem(customArmorMaterial, EquipmentSlot.HEAD, new Item.Settings().group(periodic.ITEM_GROUP));

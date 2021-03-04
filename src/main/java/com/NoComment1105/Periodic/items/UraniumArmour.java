@@ -9,7 +9,7 @@ import net.minecraft.sound.SoundEvents;
 
 
 
-public class CustomArmorMaterial implements ArmorMaterial {
+public class UraniumArmour implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[] {285, 329, 351, 241};
     private static final int[] PROTECTION_VALUES = new int[] {3, 5, 7, 2};
     @Override
