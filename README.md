@@ -20,6 +20,8 @@ Adds Uranium Lumps, Uranium Ore and Uranium Blocks
 |:---------|:-------|:--------|
 | NoComment1105 | Pack Lead | [Contributions](https://github.com/NoComment1105/Easier-items-datapck/commits?author=NoComment1105) |
 
+### Update Notes
+Usually if an update alters ore generation slightly there isnt an update path that im aware of. So i do apologise but you probably have to make a new world for an ore gen update
 
 ### Versioning
 This pack is 1.16.x at it's oldest. I am **NOT** going to back port any of these changes to any other versions
