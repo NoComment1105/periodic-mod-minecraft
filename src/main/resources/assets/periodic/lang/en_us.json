@@ -2,5 +2,9 @@
   "item.periodic.uranium": "Uranium Ingot",
   "block.periodic.uranium_block": "Uranium Block",
   "block.periodic.uranium_ore": "Uranium Ore",
-  "itemGroup.periodic.general": "Periodic"
+  "itemGroup.periodic.general": "Periodic",
+  "item.periodic.uranium_chestplate": "Uranium Chestplate",
+  "item.periodic.uranium_helmet": "Uranium Helmet",
+  "item.periodic.uranium_leggings": "Uranium Leggings",
+  "item.periodic.uranium_boots": "Uranium Boots"
 }

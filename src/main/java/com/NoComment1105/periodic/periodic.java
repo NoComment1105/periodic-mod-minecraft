@@ -1,5 +1,6 @@
 package com.NoComment1105.Periodic;
 
+import com.NoComment1105.Periodic.items.RegisterArmour;
 import com.NoComment1105.Periodic.registry.ModBlocks;
 import com.NoComment1105.Periodic.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -15,7 +16,6 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 
-import static net.fabricmc.fabric.impl.networking.NetworkingImpl.MOD_ID;
 public class periodic implements ModInitializer {
     public static final String MOD_ID = "periodic";
     //creates the creative tab
@@ -34,6 +34,7 @@ public class periodic implements ModInitializer {
         //initialising blocks and items
         ModItems.registerItems();
         ModBlocks.registerBlocks();
+        RegisterArmour.register();
         //registering my ore generation
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("periodic", "ore_uranium_ore_overworld"), ORE_URANIUM_ORE_OVERWORLD);
     }
