@@ -6,5 +6,13 @@
   "item.periodic.uranium_chestplate": "Uranium Chestplate",
   "item.periodic.uranium_helmet": "Uranium Helmet",
   "item.periodic.uranium_leggings": "Uranium Leggings",
-  "item.periodic.uranium_boots": "Uranium Boots"
+  "item.periodic.uranium_boots": "Uranium Boots",
+  "item.periodic.aluminium": "Aluminium Bar",
+  "item.periodic.aluminium_block": "Block of Aluminium",
+  "item.periodic.aluminium_ore": "Aluminium Ore",
+  "item.periodic.uranium_pickaxe": "Uranium Pickaxe",
+  "item.periodic.uranium_sword": "Uranium Sword",
+  "item.periodic.uranium_shovel": "Uranium Shovel",
+  "item.periodic.uranium_axe": "Uranium Axe",
+  "item.periodic.uranium_hoe": "Uranium Hoe"
 }
