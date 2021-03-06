@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "periodic:uranium"
+    }
+  },
+  "result": {
+    "item": "periodic:uranium_boots",
+    "count": 1
+  }
+}

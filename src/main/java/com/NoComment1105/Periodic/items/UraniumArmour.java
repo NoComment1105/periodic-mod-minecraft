@@ -24,7 +24,7 @@ public class UraniumArmour implements ArmorMaterial {
 
     @Override
     public int getEnchantability() {
-        return 9;
+        return 14;
     }
 
     @Override
