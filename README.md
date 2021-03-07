@@ -10,7 +10,7 @@ Elements from the periodic table in Minecraft 1.16.x
 This mod adds elements from the real world into minecraft, making the game, a bit more realistic
 
 ### Features
-Adds Uranium Lumps, Uranium Ore and Uranium Blocks
+Adds Uranium Ingots, Uranium Ore, Uranium Blocks, Uranium Armour and Tools
 
 **MORE COMING SOON**
 
@@ -18,10 +18,9 @@ Adds Uranium Lumps, Uranium Ore and Uranium Blocks
 
 | Author   | Role   | Links   |
 |:---------|:-------|:--------|
-| NoComment1105 | Pack Lead | [Contributions](https://github.com/NoComment1105/Easier-items-datapck/commits?author=NoComment1105) |
-
-### Update Notes
-Usually if an update alters ore generation slightly there isnt an update path that im aware of. So i do apologise but you probably have to make a new world for an ore gen update
+| NoComment1105 | Pack Lead | [Contributions](https://github.com/NoComment1105/periodic-mod-fabric/commits?author=NoComment1105) |
+| ItzChazzaa | Artist | [Contributions](https://github.com/NoComment1105/periodic-mod-fabric/commits?author=ItzChazzaa) |
+| Hydra | Artist | [Twitch](https://www.twitch.tv/serumhydra) (No Github)
 
 ### Versioning
 This pack is 1.16.x at it's oldest. I am **NOT** going to back port any of these changes to any other versions
@@ -40,4 +39,4 @@ Find the place where you've cloned the repository and type in the address bar `c
 If you have discovered an issue wiht my mod, please do not hesitate to ask anything in my [Discord](https://discord.gg/28N2Eeq2tT) or leave an issue in my [issue tracker](https://www.github.com/NoComment1105/periodic-mod-fabric/issues) but please check for a duplicate of your issue first, thanks :)
 
 ### License
-Periodic is licensed under GNP LGPLv3, which is a free and open-source license. If you want to know more, poke your mose in the [license file](https://github.com/NoComment1105/periodic-mod-fabric/blob/1.16.x/main/LICENSE)
+Periodic is licensed under GNP LGPLv3, which is a free and open-source license. If you want to know more, poke your nose in the [license file](https://github.com/NoComment1105/periodic-mod-fabric/blob/1.16.x/main/LICENSE)
