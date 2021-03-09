@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "periodic:items/uranium_helmet"
+    "layer0": "periodic:items/aluminium_boots"
   }
 }

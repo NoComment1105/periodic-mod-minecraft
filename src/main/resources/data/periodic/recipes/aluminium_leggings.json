@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "periodic:uranium"
+      "item": "periodic:aluminium"
     }
   },
   "result": {
-    "item": "periodic:uranium_leggings",
+    "item": "periodic:aluminium_leggings",
     "count": 1
   }
 }

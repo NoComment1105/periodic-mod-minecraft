@@ -9,9 +9,9 @@ import net.minecraft.sound.SoundEvents;
 
 
 
-public class UraniumArmour implements ArmorMaterial {
-    private static final int[] BASE_DURABILITY = new int[] {285, 329, 351, 241};
-    private static final int[] PROTECTION_VALUES = new int[] {3, 5, 7, 2};
+public class AluminiumArmour implements ArmorMaterial {
+    private static final int[] BASE_DURABILITY = new int[] {385, 429, 451, 341};
+    private static final int[] PROTECTION_VALUES = new int[] {3, 4, 6, 2};
     @Override
     public int getDurability(EquipmentSlot slot) {
         return BASE_DURABILITY[slot.getEntitySlotId()];
@@ -29,17 +29,17 @@ public class UraniumArmour implements ArmorMaterial {
 
     @Override
     public SoundEvent getEquipSound() {
-        return SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND;
+        return SoundEvents.ITEM_ARMOR_EQUIP_IRON;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ModItems.URANIUM);
+        return Ingredient.ofItems(ModItems.ALUMINIUM);
     }
 
     @Override
     public String getName() {
-        return "uranium";
+        return "aluminium";
     }
 
     @Override

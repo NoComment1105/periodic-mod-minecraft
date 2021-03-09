@@ -1,17 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
     "# #",
-    "   "
+    "###",
+    "###"
   ],
   "key": {
     "#": {
-      "item": "periodic:uranium"
+      "item": "periodic:aluminium"
     }
   },
   "result": {
-    "item": "periodic:uranium_helmet",
+    "item": "periodic:aluminium_chestplate",
     "count": 1
   }
 }
