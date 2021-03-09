@@ -2,7 +2,7 @@
   "item.periodic.uranium": "Uranium Ingot",
   "block.periodic.uranium_block": "Uranium Block",
   "block.periodic.uranium_ore": "Uranium Ore",
-  "itemGroup.periodic.general": "Periodic",
+  "itemGroup.periodic.general": "Periodic Items",
   "item.periodic.uranium_chestplate": "Uranium Chestplate",
   "item.periodic.uranium_helmet": "Uranium Helmet",
   "item.periodic.uranium_leggings": "Uranium Leggings",
@@ -14,5 +14,7 @@
   "item.periodic.uranium_sword": "Uranium Sword",
   "item.periodic.uranium_shovel": "Uranium Shovel",
   "item.periodic.uranium_axe": "Uranium Axe",
-  "item.periodic.uranium_hoe": "Uranium Hoe"
+  "item.periodic.uranium_hoe": "Uranium Hoe",
+  "itemGroup.periodic.armour": "Periodic Armour",
+  "itemGroup.periodic.tools": "Periodic Tools & Armour"
 }

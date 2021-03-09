@@ -1,6 +1,7 @@
 package com.NoComment1105.Periodic;
 
 import com.NoComment1105.Periodic.items.RegisterArmour;
+import com.NoComment1105.Periodic.items.UraniumArmour;
 import com.NoComment1105.Periodic.registry.ModBlocks;
 import com.NoComment1105.Periodic.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -26,6 +27,8 @@ public class periodic implements ModInitializer {
     public static final String MOD_ID = "periodic";
     //creates the creative tab
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "general"), () -> new ItemStack(ModItems.URANIUM));
+    public static final ItemGroup ARMOUR_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "armour"), () -> new ItemStack(RegisterArmour.URANIUM_CHESTPLATE));
+    public static final ItemGroup TOOL_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "tools"), () -> new ItemStack(ModItems.URANIUM_SWORD));
     //Setting ore generation characteristics
     public static final ConfiguredFeature<?, ?> ORE_URANIUM_ORE_OVERWORLD = Feature.ORE
             .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.URANIUM_ORE.getDefaultState(),
