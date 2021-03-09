@@ -15,6 +15,8 @@ public class Oregen {
         @Inject(method = "addDefaultOres(Lnet/minecraft/world/biome/GenerationSettings$Builder;)V", at = @At("TAIL"))
         private static void addDefaultOres(GenerationSettings.Builder builder, CallbackInfo ci) {
             builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, periodic.ORE_URANIUM_ORE_OVERWORLD);
+            builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, periodic.ORE_ALUMINIUM_ORE_OVERWORLD);
         }
+
     }
 }
