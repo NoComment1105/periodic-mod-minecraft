@@ -24,7 +24,7 @@ public class AluminiumArmour implements ArmorMaterial {
 
     @Override
     public int getEnchantability() {
-        return 14;
+        return 12;
     }
 
     @Override
