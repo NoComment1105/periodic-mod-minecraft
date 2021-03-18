@@ -17,6 +17,7 @@ public class ModItems {
     public static final BlockItem URANIUM_ORE = new BlockItem(ModBlocks.URANIUM_ORE, new Item.Settings().group(periodic.ITEM_GROUP));
     public static final BlockItem ALUMINIUM_BLOCK = new BlockItem(ModBlocks.ALUMINIUM_BLOCK, new Item.Settings().group(periodic.ITEM_GROUP));
     public static final BlockItem ALUMINIUM_ORE = new BlockItem(ModBlocks.ALUMINIUM_ORE, new Item.Settings().group(periodic.ITEM_GROUP));
+    public static final BlockItem POTASSIUM_ORE = new BlockItem(ModBlocks.POTASSIUM_ORE, new Item.Settings().group(periodic.ITEM_GROUP));
 
     //registering the existance of the items note that blocks need an item form too
     public static void registerItems() {
@@ -26,6 +27,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "aluminium"), ALUMINIUM);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "aluminium_block"), ALUMINIUM_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "aluminium_ore"), ALUMINIUM_ORE);
+        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "potassium_ore"), POTASSIUM_ORE);
     }
 
     public static class UraniumPickaxeItem extends PickaxeItem {

@@ -12,7 +12,7 @@
     "sources": "https://www.github.com/NoComment1105/periodic-mod-fabric"
   },
 
-  "license": "lgpl-3.0-only",
+  "license": "lgpl-3.0",
   "icon": "assets/periodic/icon.png",
   "environment": "*",
   "entrypoints": {
@@ -25,7 +25,7 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.11.2",
+    "fabricloader": ">=0.9",
     "fabric": "*",
     "minecraft": ["1.16.2", "1.16.3", "1.16.4", "1.16.5"]
   }

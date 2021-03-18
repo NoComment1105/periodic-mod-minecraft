@@ -5,8 +5,11 @@ import com.NoComment1105.Periodic.registry.ModBlocks;
 import com.NoComment1105.Periodic.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
@@ -15,12 +18,11 @@ import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
-
-import static com.NoComment1105.Periodic.registry.ModItems.URANIUM_SHOVEL;
-import static com.NoComment1105.Periodic.registry.ModItems.URANIUM_SWORD;
+import static com.NoComment1105.Periodic.registry.ModItems.*;
 import static com.NoComment1105.Periodic.registry.ModItems.UraniumAxeItem.URANIUM_AXE;
 import static com.NoComment1105.Periodic.registry.ModItems.UraniumHoeItem.URANIUM_HOE;
 import static com.NoComment1105.Periodic.registry.ModItems.UraniumPickaxeItem.URANIUM_PICKAXE;
+
 
 public class periodic implements ModInitializer {
     public static final String MOD_ID = "periodic";
@@ -41,19 +43,36 @@ public class periodic implements ModInitializer {
             .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.ALUMINIUM_ORE.getDefaultState(),
                     12)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
-                    10, // bottom offset (dont place in the bottom X)
-                    0, // min y level (dont place withing X block of maximum)
+                    10, // bottom offset (don't place in the bottom X)
+                    0, // min y level (don't place withing X block of maximum)
                     60))) // max y level (maximum)
             .spreadHorizontally().repeat(14); // number of veins per chunk
+
+    public static  ConfiguredFeature<?, ?> ORE_POTASSIUM_ORE_END = Feature.ORE
+            .configure(new OreFeatureConfig(new BlockMatchRuleTest(Blocks.END_STONE), ModBlocks.POTASSIUM_ORE.getDefaultState(),
+                    5))
+            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
+                    0,
+                    0,
+                    64)))
+            .spreadHorizontally()
+            .repeat(10);
+    //Block entity
+    public static BlockEntityType<UraniumBlockEntity> URANIUM_BLOCK_ENTITY;
+
     @Override
     public void onInitialize() {
         //initialising blocks and items
         ModItems.registerItems();
         ModBlocks.registerBlocks();
         RegisterArmour.register();
+        //Block entity linking
+        URANIUM_BLOCK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, "periodic:uranium", BlockEntityType.Builder.create(UraniumBlockEntity::new, URANIUM_BLOCK).build(null));
         //registering my ore generation
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("periodic", "ore_uranium_ore_overworld"), ORE_URANIUM_ORE_OVERWORLD);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("periodic", "ore_aluminium_ore_overworld"), ORE_ALUMINIUM_ORE_OVERWORLD);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("periodic", "ore_potassium_ore_end"), ORE_POTASSIUM_ORE_END);
+        // Registering Tools
         Registry.register(Registry.ITEM, new Identifier("periodic", "uranium_pickaxe"), URANIUM_PICKAXE);
         Registry.register(Registry.ITEM, new Identifier("periodic", "uranium_sword"), URANIUM_SWORD);
         Registry.register(Registry.ITEM, new Identifier("periodic", "uranium_shovel"), URANIUM_SHOVEL);

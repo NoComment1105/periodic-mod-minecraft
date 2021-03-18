@@ -4,7 +4,8 @@
   "package": "com.NoComment1105.Periodic.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "Oregen$DefaultBiomeFeaturesMixin"
+    "OverworldOregen$DefaultBiomeFeaturesMixin",
+    "EndOregen$DefaultBiomeCreatorMixin"
   ],
   "client": [],
   "server": [],
