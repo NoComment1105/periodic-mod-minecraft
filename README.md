@@ -39,4 +39,4 @@ Find the place where you've cloned the repository and type in the address bar `c
 If you have discovered an issue with my mod, please do not hesitate to ask anything in my [Discord](https://discord.gg/28N2Eeq2tT) or leave an issue in my [issue tracker](https://www.github.com/NoComment1105/periodic-mod-fabric/issues) but please check for a duplicate of your issue first, thanks :)
 
 ### License
-Periodic is licensed under GNP LGPLv3, which is a free and open-source license. If you want to know more, poke your nose in the [license file](https://github.com/NoComment1105/periodic-mod-fabric/blob/1.16.x/main/LICENSE)
+Periodic is licensed under GNU LGPLv3, which is a free and open-source license. If you want to know more, poke your nose in the [license file](https://github.com/NoComment1105/periodic-mod-fabric/blob/1.16.x/main/LICENSE)
