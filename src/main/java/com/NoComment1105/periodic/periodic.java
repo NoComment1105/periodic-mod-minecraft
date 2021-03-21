@@ -18,7 +18,9 @@ import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
-import static com.NoComment1105.Periodic.registry.ModItems.*;
+import static com.NoComment1105.Periodic.registry.ModBlocks.URANIUM_BLOCK;
+import static com.NoComment1105.Periodic.registry.ModItems.URANIUM_SHOVEL;
+import static com.NoComment1105.Periodic.registry.ModItems.URANIUM_SWORD;
 import static com.NoComment1105.Periodic.registry.ModItems.UraniumAxeItem.URANIUM_AXE;
 import static com.NoComment1105.Periodic.registry.ModItems.UraniumHoeItem.URANIUM_HOE;
 import static com.NoComment1105.Periodic.registry.ModItems.UraniumPickaxeItem.URANIUM_PICKAXE;
@@ -29,7 +31,7 @@ public class periodic implements ModInitializer {
     //creates the creative tab
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "general"), () -> new ItemStack(ModItems.URANIUM));
     public static final ItemGroup ARMOUR_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "armour"), () -> new ItemStack(RegisterArmour.ALUMINIUM_CHESTPLATE));
-    public static final ItemGroup TOOL_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "tools"), () -> new ItemStack(ModItems.URANIUM_SWORD));
+    public static final ItemGroup TOOL_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "tools"), () -> new ItemStack(URANIUM_SWORD));
     //Setting ore generation characteristics
     public static final ConfiguredFeature<?, ?> ORE_URANIUM_ORE_OVERWORLD = Feature.ORE
             .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.URANIUM_ORE.getDefaultState(),
@@ -67,7 +69,7 @@ public class periodic implements ModInitializer {
         ModBlocks.registerBlocks();
         RegisterArmour.register();
         //Block entity linking
-        URANIUM_BLOCK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, "periodic:uranium", BlockEntityType.Builder.create(UraniumBlockEntity::new, URANIUM_BLOCK).build(null));
+        //URANIUM_BLOCK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, "periodic:uranium_block", BlockEntityType.Builder.create(UraniumBlockEntity::new, URANIUM_BLOCK).build(null));
         //registering my ore generation
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("periodic", "ore_uranium_ore_overworld"), ORE_URANIUM_ORE_OVERWORLD);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("periodic", "ore_aluminium_ore_overworld"), ORE_ALUMINIUM_ORE_OVERWORLD);
