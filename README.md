@@ -10,9 +10,12 @@ Elements from the periodic table in Minecraft 1.16.x
 This mod adds elements from the real world into minecraft, making the game, a bit more realistic
 
 ### Features
-Adds Uranium Ingots, Uranium Ore, Uranium Blocks, Uranium Armour and Tools
+* Adds Uranium, Aluminium, Potassium, Steel and Silver
+* Uranium Tools
+* Aluminium Armour
+* Reinforced Variants of both
+* Potassium Lanterns
 
-**MORE COMING SOON**
 
 ### The Developers
 
