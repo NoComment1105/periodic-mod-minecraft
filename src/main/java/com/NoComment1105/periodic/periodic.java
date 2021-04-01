@@ -59,8 +59,6 @@ public class periodic implements ModInitializer {
                     64)))
             .spreadHorizontally()
             .repeat(10);
-    //Block entity
-    public static BlockEntityType<UraniumBlockEntity> URANIUM_BLOCK_ENTITY;
 
     @Override
     public void onInitialize() {
@@ -68,8 +66,6 @@ public class periodic implements ModInitializer {
         ModItems.registerItems();
         ModBlocks.registerBlocks();
         RegisterArmour.register();
-        //Block entity linking
-        //URANIUM_BLOCK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, "periodic:uranium_block", BlockEntityType.Builder.create(UraniumBlockEntity::new, URANIUM_BLOCK).build(null));
         //registering my ore generation
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("periodic", "ore_uranium_ore_overworld"), ORE_URANIUM_ORE_OVERWORLD);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("periodic", "ore_aluminium_ore_overworld"), ORE_ALUMINIUM_ORE_OVERWORLD);
