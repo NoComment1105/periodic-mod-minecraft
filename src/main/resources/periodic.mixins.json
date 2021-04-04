@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.NoComment1105.Periodic.mixin",
+  "package": "com.nocomment1105.Periodic.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "OverworldOregen$DefaultBiomeFeaturesMixin",
