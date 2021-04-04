@@ -1,10 +1,10 @@
-# periodic-mod-fabric
+# Periodic mod Fabric
 ![Github license](https://img.shields.io/github/license/NoComment1105/periodic-mod-fabric.svg)
 ![Github Issues](https://img.shields.io/github/issues/NoComment1105/periodic-mod-fabric.svg)
 ![Github Tag](https://img.shields.io/github/tag/NoComment1105/periodic-mod-fabric.svg)
 [![Discord Chat](https://img.shields.io/badge/Chat%20on-discord-7289DA)](https://discord.gg/28N2Eeq2tT)
 
-Elements from the periodic table in Minecraft 1.16.x
+Elements from the periodic table in Minecraft >=1.16.2
 
 ### What is the purpose of this Mod?
 This mod adds elements from the real world into minecraft, making the game, a bit more realistic
@@ -21,17 +21,19 @@ This mod adds elements from the real world into minecraft, making the game, a bi
 
 | Author   | Role   | Links   |
 |:---------|:-------|:--------|
-| NoComment1105 | Pack Lead | [Contributions](https://github.com/NoComment1105/periodic-mod-fabric/commits?author=NoComment1105) |
+| NoComment1105 | Mod Lead | [Contributions](https://github.com/NoComment1105/periodic-mod-fabric/commits?author=NoComment1105) |
 | ItzChazzaa | Artist | [Contributions](https://github.com/NoComment1105/periodic-mod-fabric/commits?author=ItzChazzaa) |
 | Hydra | Artist | [Twitch](https://www.twitch.tv/serumhydra) (No Github)
 
 ### Versioning
-This pack is 1.16.x at it's oldest. I am **NOT** going to back-port any of these changes to any other versions
+This pack is >=1.16.2 at it's oldest. I am **NOT** going to back-port this mod to any older versions
 I will try my hardest to updates this pack, in its latest release at the time, on the day of the next version
 ### THERE WILL NOT BE A FORGE VERSION
 
+----
+#### This part requires some knowledge of coding to use, please move on at your own choice
 ### Building the mod
-To build this mod in its dev version you need to follow some steps to compile it into the .jar Minecraft needs to use this mod.
+To build this mod in its dev version you need to follow some steps to compile it into the .jar Minecraft needs to use this mod. (Windows verison as that is my platform)
 
 #### Requirements
 You will need to have a JDK 8 or greater installed on your computer to build my mod. An easy location to acquire one of these is on [AdoptOpenJDK](https://adoptopenjdk.net)
@@ -42,5 +44,6 @@ Find the place where you've cloned the repository and type in the address bar `c
 ### Issues
 If you have discovered an issue with my mod, please do not hesitate to ask anything in my [Discord](https://discord.gg/28N2Eeq2tT) or leave an issue in my [issue tracker](https://www.github.com/NoComment1105/periodic-mod-fabric/issues) but please check for a duplicate of your issue first, thanks :)
 
+----
 ### License
 Periodic is licensed under GNU LGPLv3, which is a free and open-source license. If you want to know more, poke your nose in the [license file](https://github.com/NoComment1105/periodic-mod-fabric/blob/1.16.x/main/LICENSE)
