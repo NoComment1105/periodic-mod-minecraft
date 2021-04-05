@@ -1,6 +1,6 @@
 {
   "item.periodic.uranium": "Uranium Ingot",
-  "block.periodic.uranium_block": "Uranium Block",
+  "block.periodic.uranium_block": "Block of Uranium",
   "block.periodic.uranium_ore": "Uranium Ore",
   "itemGroup.periodic.general": "Periodic Items",
   "item.periodic.aluminium_chestplate": "Aluminium Chestplate",
@@ -16,5 +16,21 @@
   "item.periodic.uranium_axe": "Uranium Axe",
   "item.periodic.uranium_hoe": "Uranium Hoe",
   "itemGroup.periodic.armour": "Periodic Armour",
-  "itemGroup.periodic.tools": "Periodic Tools & Armour"
+  "itemGroup.periodic.tools": "Periodic Tools & Armour",
+  "item.periodic.silver": "Silver Lump",
+  "block.periodic.silver_block": "Block of Silver",
+  "block.periodic.silver_ore": "Silver Ore",
+  "item.periodic.potassium": "Potassium Lump",
+  "block.periodic.potassium_ore": "Potassium Ore",
+  "block.periodic.k_lantern": "Potassium Lantern",
+  "item.periodic.steel": "Steel Ingot",
+  "item.periodic.reinforced_aluminium_chestplate": "Reinforced Aluminium Chestplate",
+  "item.periodic.reinforced_aluminium_helmet": "Reinforced Aluminium Helmet",
+  "item.periodic.reinforced_aluminium_leggings": "Reinforced Aluminium Leggings",
+  "item.periodic.reinforced_aluminium_boots": "Reinforced Aluminium Boots",
+  "item.periodic.reinforced_uranium_pickaxe": "Reinforced Uranium Pickaxe",
+  "item.periodic.reinforced_uranium_sword": "Reinforced Uranium Sword",
+  "item.periodic.reinforced_uranium_shovel": "Reinforced Uranium Shovel",
+  "item.periodic.reinforced_uranium_axe": "Reinforced Uranium Axe",
+  "item.periodic.reinforced_uranium_hoe": "Reinforced Uranium Hoe"
 }
