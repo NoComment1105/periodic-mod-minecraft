@@ -1,6 +1,6 @@
-package com.NoComment1105.Periodic.mixin;
+package com.nocomment1105.Periodic.mixin;
 
-import com.NoComment1105.Periodic.periodic;
+import com.nocomment1105.Periodic.periodic;
 import net.minecraft.world.biome.GenerationSettings;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
@@ -16,6 +16,7 @@ public class OverworldOregen {
         private static void addDefaultOres(GenerationSettings.Builder builder, CallbackInfo ci) {
             builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, periodic.ORE_URANIUM_ORE_OVERWORLD);
             builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, periodic.ORE_ALUMINIUM_ORE_OVERWORLD);
+            builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, periodic.ORE_SILVER_ORE_OVERWORLD);
         }
 
     }
