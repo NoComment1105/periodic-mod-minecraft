@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "periodic:items/reinforced_aluminium_boots"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "periodic:aluminium_block"
+    }
+  ],
+  "result": {
+    "item": "periodic:aluminium",
+    "count": 9
+  }
+}
