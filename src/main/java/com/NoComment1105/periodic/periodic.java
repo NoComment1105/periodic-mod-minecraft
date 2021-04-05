@@ -1,8 +1,8 @@
-package com.NoComment1105.Periodic;
+package com.nocomment1105.Periodic;
 
-import com.NoComment1105.Periodic.items.RegisterArmour;
-import com.NoComment1105.Periodic.registry.ModBlocks;
-import com.NoComment1105.Periodic.registry.ModItems;
+import com.nocomment1105.Periodic.items.RegisterArmour;
+import com.nocomment1105.Periodic.registry.ModBlocks;
+import com.nocomment1105.Periodic.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.block.Blocks;
@@ -17,11 +17,14 @@ import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
-import static com.NoComment1105.Periodic.registry.ModItems.URANIUM_SHOVEL;
-import static com.NoComment1105.Periodic.registry.ModItems.URANIUM_SWORD;
-import static com.NoComment1105.Periodic.registry.ModItems.UraniumAxeItem.URANIUM_AXE;
-import static com.NoComment1105.Periodic.registry.ModItems.UraniumHoeItem.URANIUM_HOE;
-import static com.NoComment1105.Periodic.registry.ModItems.UraniumPickaxeItem.URANIUM_PICKAXE;
+
+import static com.nocomment1105.Periodic.registry.ModItems.*;
+import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedUraniumAxeItem.REINFORCED_URANIUM_AXE;
+import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedUraniumHoeItem.REINFORCED_URANIUM_HOE;
+import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedUraniumPickaxeItem.REINFORCED_URANIUM_PICKAXE;
+import static com.nocomment1105.Periodic.registry.ModItems.UraniumAxeItem.URANIUM_AXE;
+import static com.nocomment1105.Periodic.registry.ModItems.UraniumHoeItem.URANIUM_HOE;
+import static com.nocomment1105.Periodic.registry.ModItems.UraniumPickaxeItem.URANIUM_PICKAXE;
 
 
 public class periodic implements ModInitializer {
@@ -57,6 +60,15 @@ public class periodic implements ModInitializer {
                     64)))
             .spreadHorizontally()
             .repeat(10);
+    public static  ConfiguredFeature<?, ?> ORE_SILVER_ORE_OVERWORLD = Feature.ORE
+            .configure(new OreFeatureConfig(new BlockMatchRuleTest(Blocks.STONE), ModBlocks.SILVER_ORE.getDefaultState(),
+                    5))
+            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
+                    60,
+                    0,
+                    200)))
+            .spreadHorizontally()
+            .repeat(8);
 
     @Override
     public void onInitialize() {
@@ -74,5 +86,10 @@ public class periodic implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("periodic", "uranium_shovel"), URANIUM_SHOVEL);
         Registry.register(Registry.ITEM, new Identifier("periodic", "uranium_axe"), URANIUM_AXE);
         Registry.register(Registry.ITEM, new Identifier("periodic","uranium_hoe"), URANIUM_HOE);
+        Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_uranium_pickaxe"), REINFORCED_URANIUM_PICKAXE);
+        Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_uranium_sword"), REINFORCED_URANIUM_SWORD);
+        Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_uranium_shovel"), REINFORCED_URANIUM_SHOVEL);
+        Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_uranium_axe"), REINFORCED_URANIUM_AXE);
+        Registry.register(Registry.ITEM, new Identifier("periodic","reinforced_uranium_hoe"), REINFORCED_URANIUM_HOE);
     }
 }
