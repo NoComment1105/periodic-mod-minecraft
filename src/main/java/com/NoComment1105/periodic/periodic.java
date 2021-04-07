@@ -49,7 +49,7 @@ public class periodic implements ModInitializer {
                     10, // bottom offset (don't place in the bottom X)
                     0, // min y level (don't place withing X block of maximum)
                     60))) // max y level (maximum)
-            .spreadHorizontally().repeat(14); // number of veins per chunk
+            .spreadHorizontally().repeat(13 ); // number of veins per chunk
 
     public static  ConfiguredFeature<?, ?> ORE_POTASSIUM_ORE_END = Feature.ORE
             .configure(new OreFeatureConfig(new BlockMatchRuleTest(Blocks.END_STONE), ModBlocks.POTASSIUM_ORE.getDefaultState(),
