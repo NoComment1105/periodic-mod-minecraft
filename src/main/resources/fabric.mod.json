@@ -17,7 +17,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.NoComment1105.Periodic.periodic"
+      "com.nocomment1105.Periodic.periodic"
     ]
   },
   "mixins": [

@@ -36,7 +36,7 @@ public class periodic implements ModInitializer {
     //Setting ore generation characteristics
     public static final ConfiguredFeature<?, ?> ORE_URANIUM_ORE_OVERWORLD = Feature.ORE
             .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.URANIUM_ORE.getDefaultState(),
-                    3)) // vein size
+                    4)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0, // bottom offset
                     6, // min y level
@@ -55,20 +55,20 @@ public class periodic implements ModInitializer {
             .configure(new OreFeatureConfig(new BlockMatchRuleTest(Blocks.END_STONE), ModBlocks.POTASSIUM_ORE.getDefaultState(),
                     5))
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
+                    10,
                     0,
-                    0,
-                    64)))
+                    80)))
             .spreadHorizontally()
             .repeat(10);
-    public static  ConfiguredFeature<?, ?> ORE_SILVER_ORE_OVERWORLD = Feature.ORE
-            .configure(new OreFeatureConfig(new BlockMatchRuleTest(Blocks.STONE), ModBlocks.SILVER_ORE.getDefaultState(),
-                    5))
+    public static ConfiguredFeature<?, ?> ORE_SILVER_ORE_NETHER = Feature.ORE
+            .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_NETHER, ModBlocks.SILVER_ORE.getDefaultState(),
+                    6))
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     60,
                     0,
-                    200)))
+                    128)))
             .spreadHorizontally()
-            .repeat(8);
+            .repeat(11);
 
     @Override
     public void onInitialize() {

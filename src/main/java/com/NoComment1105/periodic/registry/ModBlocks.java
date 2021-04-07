@@ -24,9 +24,9 @@ public class ModBlocks {
     public static final Block POTASSIUM_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool().strength(3f, 18f).sounds(BlockSoundGroup.STONE));
     public static final Block SILVER_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).breakByTool(FabricToolTags.PICKAXES, 2)
-            .requiresTool().strength(5f, 40f).sounds(BlockSoundGroup.METAL));
+            .requiresTool().strength(5f, 20f).sounds(BlockSoundGroup.METAL));
     public static final Block SILVER_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2)
-            .requiresTool().strength(3f, 15f).sounds(BlockSoundGroup.STONE));
+            .requiresTool().strength(3f, 5f).sounds(BlockSoundGroup.STONE));
     //Lantern
     public static final LanternBlock POTASSIUM_LANTERN = new LanternBlock(AbstractBlock.Settings.of(Material.METAL).requiresTool()
             .strength(3.5F).sounds(BlockSoundGroup.LANTERN).luminance((state) -> 15).nonOpaque());
@@ -38,8 +38,8 @@ public class ModBlocks {
         Registry.register(Registry.BLOCK, new Identifier(periodic.MOD_ID, "aluminium_block"), ALUMINIUM_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(periodic.MOD_ID, "aluminium_ore"), ALUMINIUM_ORE);
         Registry.register(Registry.BLOCK, new Identifier(periodic.MOD_ID, "potassium_ore"), POTASSIUM_ORE);
+        Registry.register(Registry.BLOCK, new Identifier(periodic.MOD_ID, "k_lantern"), POTASSIUM_LANTERN);
         Registry.register(Registry.BLOCK, new Identifier(periodic.MOD_ID, "silver_block"), SILVER_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(periodic.MOD_ID, "silver_ore"), SILVER_ORE);
-        Registry.register(Registry.BLOCK, new Identifier(periodic.MOD_ID, "k_lantern"), POTASSIUM_LANTERN);
     }
 }

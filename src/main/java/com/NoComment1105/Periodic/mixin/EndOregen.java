@@ -1,6 +1,6 @@
-package com.NoComment1105.Periodic.mixin;
+package com.nocomment1105.Periodic.mixin;
 
-import com.NoComment1105.Periodic.periodic;
+import com.nocomment1105.Periodic.periodic;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.DefaultBiomeCreator;
 import net.minecraft.world.biome.GenerationSettings;

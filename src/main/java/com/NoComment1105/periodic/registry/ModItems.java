@@ -14,8 +14,8 @@ public class ModItems {
     public static final Item URANIUM = new Item(new Item.Settings().group(periodic.ITEM_GROUP));
     public static final Item ALUMINIUM = new Item(new Item.Settings().group(periodic.ITEM_GROUP));
     public static final Item POTASSIUM = new Item(new Item.Settings().group(periodic.ITEM_GROUP));
-    public static final Item STEEL = new Item(new Item.Settings().group(periodic.ITEM_GROUP));
     public static final Item SILVER = new Item(new Item.Settings().group(periodic.ITEM_GROUP));
+    public static final Item STEEL = new Item(new Item.Settings().group(periodic.ITEM_GROUP));
     public static ToolItem URANIUM_SWORD = new UraniumSwordItem(UraniumToolMaterial.INSTANCE, 0, -2.4F, new Item.Settings().group(periodic.TOOL_GROUP));
     public static ToolItem URANIUM_SHOVEL = new ShovelItem(UraniumToolMaterial.INSTANCE, -3F, -3.0F, new Item.Settings().group(periodic.TOOL_GROUP));
     public static ToolItem REINFORCED_URANIUM_SWORD = new ReinforcedUraniumSwordItem(ReinforcedUraniumToolMaterial.INSTANCE, 0, -2.4f, new Item.Settings().group(periodic.TOOL_GROUP));
@@ -26,9 +26,10 @@ public class ModItems {
     public static final BlockItem ALUMINIUM_BLOCK = new BlockItem(ModBlocks.ALUMINIUM_BLOCK, new Item.Settings().group(periodic.ITEM_GROUP));
     public static final BlockItem ALUMINIUM_ORE = new BlockItem(ModBlocks.ALUMINIUM_ORE, new Item.Settings().group(periodic.ITEM_GROUP));
     public static final BlockItem POTASSIUM_ORE = new BlockItem(ModBlocks.POTASSIUM_ORE, new Item.Settings().group(periodic.ITEM_GROUP));
+    public static final BlockItem POTASSIUM_LANTERN = new BlockItem(ModBlocks.POTASSIUM_LANTERN, new Item.Settings().group(periodic.ITEM_GROUP));
     public static final BlockItem SILVER_BLOCK = new BlockItem(ModBlocks.SILVER_BLOCK, new Item.Settings().group(periodic.ITEM_GROUP));
     public static final BlockItem SILVER_ORE = new BlockItem(ModBlocks.SILVER_ORE, new Item.Settings().group(periodic.ITEM_GROUP));
-    public static final BlockItem POTASSIUM_LANTERN = new BlockItem(ModBlocks.POTASSIUM_LANTERN, new Item.Settings().group(periodic.ITEM_GROUP));
+
 
     //registering the existence of the items note that blocks need an item form too
     public static void registerItems() {
@@ -38,13 +39,13 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "aluminium"), ALUMINIUM);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "aluminium_block"), ALUMINIUM_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "aluminium_ore"), ALUMINIUM_ORE);
-        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "silver"), SILVER);
-        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "silver_block"), SILVER_BLOCK);
-        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "silver_ore"), SILVER_ORE);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "potassium"), POTASSIUM);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "potassium_ore"), POTASSIUM_ORE);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "k_lantern"), POTASSIUM_LANTERN);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "steel"), STEEL);
+        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "silver"), SILVER);
+        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "silver_block"), SILVER_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "silver_ore"), SILVER_ORE);
     }
 
     public static class UraniumPickaxeItem extends PickaxeItem {
