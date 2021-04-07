@@ -16,11 +16,11 @@ public class UraniumToolMaterial  implements ToolMaterial {
     }
     @Override
     public float getAttackDamage() {
-        return 6.0F;
+        return 5.0F;
     }
     @Override
     public int getMiningLevel() {
-        return 3;
+        return 2;
     }
     @Override
     public int getEnchantability() {

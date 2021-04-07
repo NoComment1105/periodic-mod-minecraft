@@ -66,7 +66,7 @@ public class ModItems {
         public UraniumHoeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
             super(material, attackDamage, attackSpeed, settings);
         }
-        public static ToolItem URANIUM_HOE = new UraniumHoeItem(UraniumToolMaterial.INSTANCE, -6, 0F, new Item.Settings().group(periodic.TOOL_GROUP));
+        public static ToolItem URANIUM_HOE = new UraniumHoeItem(UraniumToolMaterial.INSTANCE, -5, 0F, new Item.Settings().group(periodic.TOOL_GROUP));
     }
 
     public static class ReinforcedUraniumPickaxeItem extends PickaxeItem {
@@ -87,6 +87,6 @@ public class ModItems {
         public ReinforcedUraniumHoeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
             super(material, attackDamage, attackSpeed, settings);
         }
-        public static ToolItem REINFORCED_URANIUM_HOE = new UraniumHoeItem(UraniumToolMaterial.INSTANCE, -6, 0F, new Item.Settings().group(periodic.TOOL_GROUP));
+        public static ToolItem REINFORCED_URANIUM_HOE = new UraniumHoeItem(UraniumToolMaterial.INSTANCE, -5, 0F, new Item.Settings().group(periodic.TOOL_GROUP));
     }
 }

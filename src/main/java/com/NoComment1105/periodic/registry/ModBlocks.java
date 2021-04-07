@@ -14,9 +14,9 @@ import net.minecraft.util.registry.Registry;
 public class ModBlocks {
     //creating a block NEED REPEATING FOR EACH BLOCK
     public static final Block URANIUM_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).breakByTool(FabricToolTags.PICKAXES, 2)
-            .requiresTool().strength(5f, 35f).sounds(BlockSoundGroup.METAL).luminance(5));
+            .requiresTool().strength(5f, 35f).sounds(BlockSoundGroup.METAL).luminance(7));
     public static final Block URANIUM_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2)
-            .requiresTool().strength(3f, 15f).sounds(BlockSoundGroup.STONE).luminance(7));
+            .requiresTool().strength(3f, 15f).sounds(BlockSoundGroup.STONE).luminance(5));
     public static final Block ALUMINIUM_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool().strength(5f, 40f).sounds(BlockSoundGroup.METAL));
     public static final Block ALUMINIUM_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2)
