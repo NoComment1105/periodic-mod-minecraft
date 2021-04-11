@@ -3,7 +3,9 @@
 ![Github Issues](https://img.shields.io/github/issues/NoComment1105/periodic-mod-fabric.svg?label=Issues)
 ![Github Tag](https://img.shields.io/github/tag/NoComment1105/periodic-mod-fabric.svg?label=Current%20Tag)
 ![Latest Release](https://img.shields.io/github/v/release/NoComment1105/periodic-mod-fabric?label=Latest%20Release)
-[![Discord Chat](https://img.shields.io/badge/Chat%20nn-Discord-7289DA)](https://discord.gg/28N2Eeq2tT)
+[![Discord Chat](https://img.shields.io/badge/Chat%20on-Discord-7289DA)](https://discord.gg/28N2Eeq2tT)
+
+![icon](https://user-images.githubusercontent.com/67918617/114305880-e376fb00-9ad1-11eb-8570-781b69107165.png)
 
 
 Elements from the periodic table in Minecraft >=1.16.2
