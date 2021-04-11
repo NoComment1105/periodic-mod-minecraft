@@ -5,6 +5,8 @@
 ![Latest Release](https://img.shields.io/github/v/release/NoComment1105/periodic-mod-fabric?label=Latest%20Release)
 [![Discord Chat](https://img.shields.io/badge/Chat%20on-Discord-7289DA)](https://discord.gg/28N2Eeq2tT)
 
+![icon](https://user-images.githubusercontent.com/67918617/114305880-e376fb00-9ad1-11eb-8570-781b69107165.png)
+
 
 Elements from the periodic table in Minecraft >=1.16.2
 
