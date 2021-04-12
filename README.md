@@ -27,7 +27,7 @@ This mod adds elements from the real world into minecraft, making the game, a bi
 |:---------|:-------|:--------|
 | NoComment1105 | Mod Lead | [Contributions](https://github.com/NoComment1105/periodic-mod-fabric/commits?author=NoComment1105) |
 | ItzChazzaa | Artist | [Contributions](https://github.com/NoComment1105/periodic-mod-fabric/commits?author=ItzChazzaa) |
-| Hydra | Artist | [Contributions](https://www.github.com/NoComment1105/periodic-mod-fabric/commits?author=SerumHydra) (No Github)
+| Hydra | Artist | [Contributions](https://www.github.com/NoComment1105/periodic-mod-fabric/commits?author=SerumHydra) |
 
 ### Versioning
 This pack is >=1.16.2 at it's oldest. I am **NOT** going to back-port this mod to any older versions
