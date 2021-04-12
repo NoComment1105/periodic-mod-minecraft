@@ -1,7 +1,6 @@
 # Periodic mod Fabric
 ![Github license](https://img.shields.io/github/license/NoComment1105/periodic-mod-fabric.svg?label=License)
 ![Github Issues](https://img.shields.io/github/issues/NoComment1105/periodic-mod-fabric.svg?label=Issues)
-![Github Tag](https://img.shields.io/github/tag/NoComment1105/periodic-mod-fabric.svg?label=Current%20Tag)
 ![Latest Release](https://img.shields.io/github/v/release/NoComment1105/periodic-mod-fabric?label=Latest%20Release)
 [![Discord Chat](https://img.shields.io/badge/Chat%20on-Discord-7289DA)](https://discord.gg/28N2Eeq2tT)
 
