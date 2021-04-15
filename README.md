@@ -30,8 +30,8 @@ This mod adds elements from the real world into minecraft, making the game, a bi
 | Hydra | Artist | [Contributions](https://www.github.com/NoComment1105/periodic-mod-fabric/commits?author=SerumHydra) |
 
 ### Versioning
-This pack is >=1.16.2 at it's oldest. I am **NOT** going to back-port this mod to any older versions
-I will try my hardest to updates this pack, in its latest release at the time, on the day of the next version
+This mod is >=1.16.2 at it's oldest. I am **NOT** going to back-port this mod to any older versions
+I will try my hardest to updates this mod, in its latest release at the time, on the day of the next version
 ### THERE WILL NOT BE A FORGE VERSION.
 
 ----
