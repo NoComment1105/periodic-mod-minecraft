@@ -1,6 +1,8 @@
 plugins {
 	id 'fabric-loom' version '0.6-SNAPSHOT'
 	id 'maven-publish'
+	id "com.modrinth.minotaur" version "1.1.0"
+	id "com.matthewprenger.cursegradle" version "1.4.0"
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8
@@ -88,5 +90,46 @@ publishing {
 		// Notice: This block does NOT have the same function as the block in the top level.
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
+	}
+}
+import com.modrinth.minotaur.TaskModrinthUpload
+
+task publishModrinth (type: TaskModrinthUpload) {
+	token = System.getenv().MODRINTH_TOKEN // Use an environment property if releasing your source code on GitHub!
+	projectId = '5XACEUIs' // The ID of your modrinth project, slugs will not work.
+	versionNumber = '1.16.5-v1.1' // The version of the mod to upload.
+	uploadFile = remapJar // This links to a task that builds your mod jar and sets "uploadFile" to the mod jar.
+	changelog = "The changelog can be found at https://github.com/NoComment1105/periodic-mod-fabric/releases/latest"
+	addGameVersion('1.16.2') // Any minecraft version.
+	addGameVersion('1.16.3')
+	addGameVersion('1.16.4')
+	addGameVersion('1.16.5')
+	addLoader('fabric') // Can be fabric or forge. Modrinth will support liteloader and rift at a later date.
+}
+
+curseforge {
+	apiKey = System.getenv().CURSEFORGE_TOKEN
+	project {
+		id = '470001'
+		releaseType = 'release'
+		changelog = 'The changelog can be found at https://github.com/NoComment1105/periodic-mod-fabric/releases/latest'
+		relations {
+			requiredDependency "fabric-api" // Fabric API is required
+		}
+		addGameVersion '1.16.2'
+		addGameVersion "1.16.3"
+		addGameVersion "1.16.4"
+		addGameVersion "1.16.5"
+		addGameVersion "Fabric"
+
+		mainArtifact(file("${project.buildDir}/libs/${archivesBaseName}-${version}.jar")) {
+			displayName = "Periodic $project.version"
+		}
+		afterEvaluate {
+			uploadTask.dependsOn(remapJar)
+		}
+	}
+	options {
+		forgeGradleIntegration = false
 	}
 }
