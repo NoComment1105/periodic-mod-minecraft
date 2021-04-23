@@ -95,7 +95,7 @@ publishing {
 import com.modrinth.minotaur.TaskModrinthUpload
 
 task publishModrinth (type: TaskModrinthUpload) {
-	token = System.getenv().MODRINTH_TOKEN // Use an environment property if releasing your source code on GitHub!
+	token = System.getenv("MODRINTH_TOKEN") // Use an environment property if releasing your source code on GitHub!
 	projectId = '5XACEUIs' // The ID of your modrinth project, slugs will not work.
 	versionNumber = '1.16.5-v1.1' // The version of the mod to upload.
 	uploadFile = remapJar // This links to a task that builds your mod jar and sets "uploadFile" to the mod jar.
@@ -108,7 +108,7 @@ task publishModrinth (type: TaskModrinthUpload) {
 }
 
 curseforge {
-	apiKey = System.getenv().CURSEFORGE_TOKEN
+	apiKey = System.getenv("CURSEFORGE_TOKEN")
 	project {
 		id = '470001'
 		releaseType = 'release'
