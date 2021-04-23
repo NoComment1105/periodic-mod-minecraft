@@ -109,7 +109,7 @@ task publishModrinth (type: TaskModrinthUpload) {
 def CURSEFORGE_TOKEN = System.getenv("CURSEFORGE_TOKEN")
 
 curseforge {
-	apiKey = CURSEFORGE_TOKEN
+	apiKey CURSEFORGE_TOKEN == null ? "" : CURSEFORGE_TOKEN
 	project {
 		id = '470001'
 		releaseType = 'release'
