@@ -106,9 +106,10 @@ task publishModrinth (type: TaskModrinthUpload) {
 	addGameVersion('1.16.5')
 	addLoader('fabric') // Can be fabric or forge. Modrinth will support liteloader and rift at a later date.
 }
+def CURSEFORGE_TOKEN = System.getenv("CURSEFORGE_TOKEN")
 
 curseforge {
-	apiKey = System.getenv("CURSEFORGE_TOKEN")
+	apiKey = CURSEFORGE_TOKEN
 	project {
 		id = '470001'
 		releaseType = 'release'
