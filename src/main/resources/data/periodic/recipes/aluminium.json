@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "periodic:aluminium_ore"
   },
-  "result": "periodic:aluminium_bar",
+  "result": "periodic:aluminium",
   "experience": 0.5,
   "cookingtime": 200
 }
