@@ -12,8 +12,7 @@ import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.world.gen.decorator.Decorator;
-import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
+import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
@@ -36,39 +35,16 @@ public class periodic implements ModInitializer {
     //Setting ore generation characteristics
     public static final ConfiguredFeature<?, ?> ORE_URANIUM_ORE_OVERWORLD = Feature.ORE
             .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.URANIUM_ORE.getDefaultState(),
-                    4)) // vein size
-            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
-                    0, // bottom offset
-                    6, // min y level
-                    36))) // max y level
-            .spreadHorizontally().repeat(10); // number of veins per chunk
+                    4)).method_36296(YOffset.fixed(6), YOffset.fixed(36)).spreadHorizontally().repeat(10);
     public static final ConfiguredFeature<?, ?> ORE_ALUMINIUM_ORE_OVERWORLD = Feature.ORE
             .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.ALUMINIUM_ORE.getDefaultState(),
-                    12)) // vein size
-            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
-                    10, // bottom offset (don't place in the bottom X)
-                    0, // min y level (don't place withing X block of maximum)
-                    60))) // max y level (maximum)
-            .spreadHorizontally().repeat(13 ); // number of veins per chunk
-
+                    12)).method_36296(YOffset.fixed(10), YOffset.fixed(60)).spreadHorizontally().repeat(13);
     public static  ConfiguredFeature<?, ?> ORE_POTASSIUM_ORE_END = Feature.ORE
             .configure(new OreFeatureConfig(new BlockMatchRuleTest(Blocks.END_STONE), ModBlocks.POTASSIUM_ORE.getDefaultState(),
-                    5))
-            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
-                    10,
-                    0,
-                    80)))
-            .spreadHorizontally()
-            .repeat(10);
+                    5)).method_36296(YOffset.fixed(10), YOffset.fixed(80)).spreadHorizontally().repeat(10);
     public static ConfiguredFeature<?, ?> ORE_SILVER_ORE_NETHER = Feature.ORE
             .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_NETHER, ModBlocks.SILVER_ORE.getDefaultState(),
-                    6))
-            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
-                    60,
-                    0,
-                    128)))
-            .spreadHorizontally()
-            .repeat(11);
+                    6)).method_36296(YOffset.fixed(60), YOffset.fixed(128)).spreadHorizontally().repeat(11);
 
     @Override
     public void onInitialize() {
