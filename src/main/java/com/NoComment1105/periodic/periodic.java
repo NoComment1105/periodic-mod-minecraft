@@ -50,7 +50,6 @@ public class periodic implements ModInitializer {
                     0, // min y level (don't place withing X block of maximum)
                     60))) // max y level (maximum)
             .spreadHorizontally().repeat(13 ); // number of veins per chunk
-
     public static  ConfiguredFeature<?, ?> ORE_POTASSIUM_ORE_END = Feature.ORE
             .configure(new OreFeatureConfig(new BlockMatchRuleTest(Blocks.END_STONE), ModBlocks.POTASSIUM_ORE.getDefaultState(),
                     5))
@@ -58,8 +57,7 @@ public class periodic implements ModInitializer {
                     10,
                     0,
                     80)))
-            .spreadHorizontally()
-            .repeat(10);
+            .spreadHorizontally().repeat(10);
     public static ConfiguredFeature<?, ?> ORE_SILVER_ORE_NETHER = Feature.ORE
             .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_NETHER, ModBlocks.SILVER_ORE.getDefaultState(),
                     6))
@@ -67,8 +65,7 @@ public class periodic implements ModInitializer {
                     60,
                     0,
                     128)))
-            .spreadHorizontally()
-            .repeat(11);
+            .spreadHorizontally().repeat(11);
 
     @Override
     public void onInitialize() {
