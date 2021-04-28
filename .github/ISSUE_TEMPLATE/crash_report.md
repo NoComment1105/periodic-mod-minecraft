@@ -1,3 +1,12 @@
+---
+name: Crash report
+about: Create a report to inform us of a constant crash
+title: ''
+labels: ''
+assignees: ''
+
+---
+
 ### Read me before you open an issue! ###
 
 #### Instructions
