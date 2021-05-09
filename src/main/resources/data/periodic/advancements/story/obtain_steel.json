@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "periodic:steel"
+    },
+    "title": {
+      "translate": "advancements.story.obtain_steel.title"
+    },
+    "description": {
+      "translate": "advancements.story.obtain_steel.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "periodic:root",
+  "criteria": {
+    "steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "periodic:steel"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "steel"
+    ]
+  ]
+}

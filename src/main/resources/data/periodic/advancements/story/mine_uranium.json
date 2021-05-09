@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "periodic:uranium"
+    },
+    "title": {
+      "translate": "advancements.story.mine_uranium.title"
+    },
+    "description": {
+      "translate": "advancements.story.mine_uranium.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "periodic:root",
+  "criteria": {
+    "uranium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "periodic:uranium"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "uranium"
+    ]
+  ]
+}

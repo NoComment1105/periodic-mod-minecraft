@@ -32,5 +32,24 @@
   "item.periodic.reinforced_uranium_sword": "Reinforced Uranium Sword",
   "item.periodic.reinforced_uranium_shovel": "Reinforced Uranium Shovel",
   "item.periodic.reinforced_uranium_axe": "Reinforced Uranium Axe",
-  "item.periodic.reinforced_uranium_hoe": "Reinforced Uranium Hoe"
+  "item.periodic.reinforced_uranium_hoe": "Reinforced Uranium Hoe",
+
+  "advancements.story.mine_uranium.title": "Radioactive",
+  "advancements.story.mine_uranium.description": "Acquire a Uranium Ingot",
+  "advancements.story.obtain_aluminium_armor.title": "Hunk o' metal",
+  "advancements.story.obtain_aluminium_armor.description": "Craft Aluminium Armour",
+  "advancements.story.obtain_reinforced_aluminium_armor.title": "Reinforced Hunk o' metal",
+  "advancements.story.obtain_reinforced_aluminium_armor.description": "Reinforced your Aluminium Armour",
+  "advancements.story.smelt_aluminium.title": "Bars of Metal",
+  "advancements.story.smelt_aluminium.description": "Smelt Aluminium Ore",
+  "advancements.story.kill_with_uranium_sword.title": "Wielder of Poison",
+  "advancements.story.kill_with_uranium_sword.description": "Kill a mod with a Uranium Sword",
+  "advancements.story.obtain_steel.title": "Ahoy Alloy",
+  "advancements.story.obtain_steel.description": "Craft a Steel ingot",
+
+  "advancements.nether.mine_silver.title": "A Sliver of Silver",
+  "advancements.nether.mine_silver.description": "Acquire Silver",
+
+  "advancements.end.mine_potassium.title": "Purple Flames",
+  "advancements.end.mine_potassium.description": "Acquire a Potassium Lump"
 }
