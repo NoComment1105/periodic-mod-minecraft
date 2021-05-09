@@ -4,7 +4,6 @@ import com.nocomment1105.Periodic.items.ReinforcedUraniumToolMaterial;
 import com.nocomment1105.Periodic.items.UraniumSwordItem;
 import com.nocomment1105.Periodic.items.UraniumToolMaterial;
 import com.nocomment1105.Periodic.periodic;
-import net.minecraft.block.LanternBlock;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -20,6 +19,7 @@ public class ModItems {
     public static ToolItem URANIUM_SHOVEL = new ShovelItem(UraniumToolMaterial.INSTANCE, -3F, -3.0F, new Item.Settings().group(periodic.TOOL_GROUP));
     public static ToolItem REINFORCED_URANIUM_SWORD = new ReinforcedUraniumSwordItem(ReinforcedUraniumToolMaterial.INSTANCE, 0, -2.4f, new Item.Settings().group(periodic.TOOL_GROUP));
     public static ToolItem REINFORCED_URANIUM_SHOVEL = new ShovelItem(ReinforcedUraniumToolMaterial.INSTANCE, -3, -3, new Item.Settings().group(periodic.TOOL_GROUP));
+    public static Item LOGO = new Item(new Item.Settings());
     //Block Items
     public static final BlockItem URANIUM_BLOCK = new BlockItem(ModBlocks.URANIUM_BLOCK, new Item.Settings().group(periodic.ITEM_GROUP));
     public static final BlockItem URANIUM_ORE = new BlockItem(ModBlocks.URANIUM_ORE, new Item.Settings().group(periodic.ITEM_GROUP));
@@ -46,6 +46,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "silver"), SILVER);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "silver_block"), SILVER_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "silver_ore"), SILVER_ORE);
+        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "logo"), LOGO);
     }
 
     public static class UraniumPickaxeItem extends PickaxeItem {

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "periodic:silver"
+    },
+    "title": {
+      "translate": "advancements.nether.mine_silver.title"
+    },
+    "description": {
+      "translate": "advancements.nether.mine_silver.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:nether/root",
+  "criteria": {
+    "silver": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "periodic:silver"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "silver"
+    ]
+  ]
+}

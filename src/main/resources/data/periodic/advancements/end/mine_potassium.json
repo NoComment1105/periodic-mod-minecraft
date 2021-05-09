@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "periodic:potassium"
+    },
+    "title": {
+      "translate": "advancements.end.mine_potassium.title"
+    },
+    "description": {
+      "translate": "advancements.end.mine_potassium.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:end/root",
+  "criteria": {
+    "potassium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "periodic:potassium"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "potassium"
+    ]
+  ]
+}

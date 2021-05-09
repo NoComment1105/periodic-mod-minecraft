@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "periodic:aluminium"
+    },
+    "title": {
+      "translate": "advancements.story.smelt_aluminium.title"
+    },
+    "description": {
+      "translate": "advancements.story.smelt_aluminium.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "periodic:root",
+  "criteria": {
+    "aluminium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "periodic:aluminium"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "aluminium"
+    ]
+  ]
+}
