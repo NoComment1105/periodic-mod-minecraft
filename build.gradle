@@ -93,7 +93,7 @@ task modrinth(type: com.modrinth.minotaur.TaskModrinthUpload, dependsOn: remapJa
 	}
 	token = System.getenv("MODRINTH_TOKEN") // Use an environment property if releasing your source code on GitHub!
 	projectId = '5XACEUIs' // The ID of your modrinth project, slugs will not work.
-	versionNumber = '1.16.5-v1.1' // The version of the mod to upload.
+	versionNumber = "Periodic $project.version" // The version of the mod to upload.
 	uploadFile = remapJar // This links to a task that builds your mod jar and sets "uploadFile" to the mod jar.
 	addGameVersion('1.16.2') // Any minecraft version.
 	addGameVersion('1.16.3')
