@@ -35,16 +35,16 @@ public class periodic implements ModInitializer {
     //Setting ore generation characteristics
     public static final ConfiguredFeature<?, ?> ORE_URANIUM_ORE_OVERWORLD = Feature.ORE
             .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.URANIUM_ORE.getDefaultState(),
-                    4)).method_36296(YOffset.fixed(6), YOffset.fixed(36)).spreadHorizontally().repeat(10);
+                    4)).uniformRange(YOffset.fixed(6), YOffset.fixed(36)).spreadHorizontally().repeat(10);
     public static final ConfiguredFeature<?, ?> ORE_ALUMINIUM_ORE_OVERWORLD = Feature.ORE
             .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.ALUMINIUM_ORE.getDefaultState(),
-                    12)).method_36296(YOffset.fixed(10), YOffset.fixed(60)).spreadHorizontally().repeat(13);
+                    12)).uniformRange(YOffset.fixed(10), YOffset.fixed(60)).spreadHorizontally().repeat(13);
     public static  ConfiguredFeature<?, ?> ORE_POTASSIUM_ORE_END = Feature.ORE
             .configure(new OreFeatureConfig(new BlockMatchRuleTest(Blocks.END_STONE), ModBlocks.POTASSIUM_ORE.getDefaultState(),
-                    5)).method_36296(YOffset.fixed(10), YOffset.fixed(80)).spreadHorizontally().repeat(10);
+                    5)).uniformRange(YOffset.fixed(10), YOffset.fixed(80)).spreadHorizontally().repeat(10);
     public static ConfiguredFeature<?, ?> ORE_SILVER_ORE_NETHER = Feature.ORE
             .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_NETHER, ModBlocks.SILVER_ORE.getDefaultState(),
-                    6)).method_36296(YOffset.fixed(60), YOffset.fixed(128)).spreadHorizontally().repeat(11);
+                    6)).uniformRange(YOffset.fixed(60), YOffset.fixed(128)).spreadHorizontally().repeat(11);
 
     @Override
     public void onInitialize() {
