@@ -2,6 +2,7 @@
 ![Github license](https://img.shields.io/github/license/NoComment1105/periodic-mod-fabric.svg?label=License)
 ![Github Issues](https://img.shields.io/github/issues/NoComment1105/periodic-mod-fabric.svg?label=Issues)
 ![Latest Release](https://img.shields.io/github/v/release/NoComment1105/periodic-mod-fabric?label=Latest%20Release)
+​[![​Github all releases​](https://img.shields.io/github/downloads/NoComment1105/periodic-mod-fabric/total.svg)](https://GitHub.com/NoComment1105/periodic-mod-fabric/releases/)
 [![Discord Chat](https://img.shields.io/badge/Chat%20on-Discord-7289DA)](https://discord.gg/28N2Eeq2tT)
 
 <a href="https://www.modrinth.com/mod/fabric-api" rel="nofollow"><img src="https://i.imgur.com/Ol1Tcf8.png" alt="Fabric Logo" width="175"></a>
