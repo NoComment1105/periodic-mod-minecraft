@@ -25,7 +25,6 @@ import static com.nocomment1105.Periodic.registry.ModItems.UraniumAxeItem.URANIU
 import static com.nocomment1105.Periodic.registry.ModItems.UraniumHoeItem.URANIUM_HOE;
 import static com.nocomment1105.Periodic.registry.ModItems.UraniumPickaxeItem.URANIUM_PICKAXE;
 
-
 public class periodic implements ModInitializer {
     public static final String MOD_ID = "periodic";
     //creates the creative tab
@@ -39,10 +38,10 @@ public class periodic implements ModInitializer {
     public static final ConfiguredFeature<?, ?> ORE_ALUMINIUM_ORE_OVERWORLD = Feature.ORE
             .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.ALUMINIUM_ORE.getDefaultState(),
                     12)).uniformRange(YOffset.fixed(10), YOffset.fixed(60)).spreadHorizontally().repeat(13);
-    public static  ConfiguredFeature<?, ?> ORE_POTASSIUM_ORE_END = Feature.ORE
+    public static final  ConfiguredFeature<?, ?> ORE_POTASSIUM_ORE_END = Feature.ORE
             .configure(new OreFeatureConfig(new BlockMatchRuleTest(Blocks.END_STONE), ModBlocks.POTASSIUM_ORE.getDefaultState(),
                     5)).uniformRange(YOffset.fixed(10), YOffset.fixed(80)).spreadHorizontally().repeat(10);
-    public static ConfiguredFeature<?, ?> ORE_SILVER_ORE_NETHER = Feature.ORE
+    public static final ConfiguredFeature<?, ?> ORE_SILVER_ORE_NETHER = Feature.ORE
             .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_NETHER, ModBlocks.SILVER_ORE.getDefaultState(),
                     6)).uniformRange(YOffset.fixed(60), YOffset.fixed(128)).spreadHorizontally().repeat(11);
 
