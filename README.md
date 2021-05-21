@@ -2,8 +2,11 @@
 ![Github license](https://img.shields.io/github/license/NoComment1105/periodic-mod-fabric.svg?label=License)
 ![Github Issues](https://img.shields.io/github/issues/NoComment1105/periodic-mod-fabric.svg?label=Issues)
 ![Latest Release](https://img.shields.io/github/v/release/NoComment1105/periodic-mod-fabric?label=Latest%20Release)
-​[![​Github all releases​](https://img.shields.io/github/downloads/NoComment1105/periodic-mod-fabric/total.svg)](https://GitHub.com/NoComment1105/periodic-mod-fabric/releases/)
 [![Discord Chat](https://img.shields.io/badge/Chat%20on-Discord-7289DA)](https://discord.gg/28N2Eeq2tT)
+#### Download Counts
+[![CurseForge downloads](http://cf.way2muchnoise.eu/full_394468_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/periodic)
+[![Github all releases](https://img.shields.io/github/downloads/NoComment1105/periodic-mod-fabric/total.svg?label=Downloads%20From%20GH)](https://GitHub.com/NoComment1105/periodic-mod-fabric/releases/)
+[Modrinth Downloads](https://modrinth.com/mod/periodic)
 
 <a href="https://www.modrinth.com/mod/fabric-api" rel="nofollow"><img src="https://i.imgur.com/Ol1Tcf8.png" alt="Fabric Logo" width="175"></a>
 
@@ -11,6 +14,7 @@
 
 
 Elements from the periodic table in Minecraft >=1.16.2
+
 
 ### What is the purpose of this Mod?
 This mod adds elements from the real world into minecraft, making the game, a bit more realistic
