@@ -31,8 +31,6 @@ dependencies {
 
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.
-	modRuntime "me.jellysquid.mod:sodium-fabric-mc1.16.3:0.1.0"
-	modRuntime "me.steinborn:lazydfu:0.1.2"
 }
 
 processResources {
