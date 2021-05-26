@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "com.nocomment1105.Periodic.periodic"
+    ],
+    "client": [
+      "com.nocomment1105.Periodic.client.ModInitializer"
     ]
   },
   "mixins": [
