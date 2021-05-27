@@ -6,7 +6,7 @@
 #### Download Counts
 [![CurseForge downloads](http://cf.way2muchnoise.eu/full_470001_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/periodic)
 [![Github all releases](https://img.shields.io/github/downloads/NoComment1105/periodic-mod-fabric/total.svg?label=Downloads%20From%20GH)](https://GitHub.com/NoComment1105/periodic-mod-fabric/releases/)
-[Modrinth Downloads](https://modrinth.com/mod/periodic)
+[Modrinth Downloads](https://modrinth.com/mod/periodic-mod-fabric)
 
 <a href="https://www.modrinth.com/mod/fabric-api" rel="nofollow"><img src="https://i.imgur.com/Ol1Tcf8.png" alt="Fabric Logo" width="175"></a>
 
