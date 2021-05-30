@@ -16,10 +16,9 @@ public class ReinforcedUraniumSwordItem extends SwordItem {
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         super.postHit(stack, target, attacker);
-        if (!target.isDead()){
-            target.applyStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 60, 1));
+        if (!target.isDead()) {
+            target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 60, 1));
         }
-        return true;
+            return true;
+        }
     }
-
-}

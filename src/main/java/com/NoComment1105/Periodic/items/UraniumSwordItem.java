@@ -17,7 +17,7 @@ public class UraniumSwordItem extends SwordItem {
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         super.postHit(stack, target, attacker);
         if (!target.isDead()){
-            target.applyStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 70, 1));
+            target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 70,1));
         }
         return true;
     }
