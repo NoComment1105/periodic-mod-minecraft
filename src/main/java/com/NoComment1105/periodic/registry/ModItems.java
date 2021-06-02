@@ -16,6 +16,7 @@ public class ModItems {
     public static final Item SILVER = new Item(new Item.Settings().group(periodic.ITEM_GROUP));
     public static final Item STEEL = new Item(new Item.Settings().group(periodic.ITEM_GROUP));
     public static final Item SULFUR = new Item(new Item.Settings().group(periodic.ITEM_GROUP));
+    public static final Item RAW_ALUMINIUM = new Item(new Item.Settings().group(periodic.ITEM_GROUP));
     public static final FlintAndSteelItem MATCHES = new FlintAndSteelItem(new Item.Settings().maxDamage(1).group(periodic.ITEM_GROUP));
     public static ToolItem URANIUM_SWORD = new UraniumSwordItem(UraniumToolMaterial.INSTANCE, 0, -2.4F, new Item.Settings().group(periodic.TOOL_GROUP));
     public static ToolItem URANIUM_SHOVEL = new ShovelItem(UraniumToolMaterial.INSTANCE, -3F, -3.0F, new Item.Settings().group(periodic.TOOL_GROUP));
@@ -41,6 +42,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "silver"), SILVER);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "sulfur"), SULFUR);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "steel"), STEEL);
+        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "raw_aluminium"), RAW_ALUMINIUM);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "uranium_block"), URANIUM_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "aluminium_block"), ALUMINIUM_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "silver_block"), SILVER_BLOCK);

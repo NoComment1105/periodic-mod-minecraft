@@ -5,17 +5,40 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "periodic:aluminium_ore",
-          "functions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "function": "minecraft:set_count",
-              "count": 1
-            }
-          ],
-          "conditions": [
+              "type": "minecraft:item",
+              "name": "periodic:aluminium_ore",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
             {
-              "condition": "minecraft:survives_explosion"
+              "type": "minecraft:item",
+              "name": "periodic:raw_aluminium",
+              "functions": [
+                {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops"
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                }
+              ]
             }
           ]
         }
