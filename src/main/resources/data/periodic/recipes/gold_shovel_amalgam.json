@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_shovel"
+    },
+    {
+      "item": "periodic:gold_amalgam"
+    }
+  ],
+  "result": {
+    "item": "minecraft:gold_nugget",
+    "count": 5
+  }
+}

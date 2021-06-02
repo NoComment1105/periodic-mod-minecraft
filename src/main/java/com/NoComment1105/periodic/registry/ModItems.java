@@ -1,4 +1,5 @@
 package com.nocomment1105.Periodic.registry;
+
 import com.nocomment1105.Periodic.items.ReinforcedUraniumSwordItem;
 import com.nocomment1105.Periodic.items.ReinforcedUraniumToolMaterial;
 import com.nocomment1105.Periodic.items.UraniumSwordItem;
@@ -17,7 +18,9 @@ public class ModItems {
     public static final Item STEEL = new Item(new Item.Settings().group(periodic.ITEM_GROUP));
     public static final Item SULFUR = new Item(new Item.Settings().group(periodic.ITEM_GROUP));
     public static final Item RAW_ALUMINIUM = new Item(new Item.Settings().group(periodic.ITEM_GROUP));
+    public static final Item GOLD_AMALGAM = new Item(new Item.Settings().group(periodic.ITEM_GROUP));
     public static final FlintAndSteelItem MATCHES = new FlintAndSteelItem(new Item.Settings().maxDamage(1).group(periodic.ITEM_GROUP));
+    // Tools
     public static ToolItem URANIUM_SWORD = new UraniumSwordItem(UraniumToolMaterial.INSTANCE, 0, -2.4F, new Item.Settings().group(periodic.TOOL_GROUP));
     public static ToolItem URANIUM_SHOVEL = new ShovelItem(UraniumToolMaterial.INSTANCE, -3F, -3.0F, new Item.Settings().group(periodic.TOOL_GROUP));
     public static ToolItem REINFORCED_URANIUM_SWORD = new ReinforcedUraniumSwordItem(ReinforcedUraniumToolMaterial.INSTANCE, 0, -2.4f, new Item.Settings().group(periodic.TOOL_GROUP));
@@ -33,9 +36,9 @@ public class ModItems {
     public static final BlockItem SILVER_BLOCK = new BlockItem(ModBlocks.SILVER_BLOCK, new Item.Settings().group(periodic.ITEM_GROUP));
     public static final BlockItem SILVER_ORE = new BlockItem(ModBlocks.SILVER_ORE, new Item.Settings().group(periodic.ITEM_GROUP));
 
-
     //registering the existence of the items note that blocks need an item form too
     public static void registerItems() {
+        // Items
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "uranium"), URANIUM);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "aluminium"), ALUMINIUM);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "potassium"), POTASSIUM);
@@ -43,6 +46,8 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "sulfur"), SULFUR);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "steel"), STEEL);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "raw_aluminium"), RAW_ALUMINIUM);
+        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "gold_amalgam"), GOLD_AMALGAM);
+        // Blocks
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "uranium_block"), URANIUM_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "aluminium_block"), ALUMINIUM_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "silver_block"), SILVER_BLOCK);
@@ -55,7 +60,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "logo"), LOGO);
 
     }
-
+    // Tool Properties
     public static class UraniumPickaxeItem extends PickaxeItem {
         public UraniumPickaxeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
             super(material, attackDamage, attackSpeed, settings);
@@ -76,7 +81,7 @@ public class ModItems {
         }
         public static ToolItem URANIUM_HOE = new UraniumHoeItem(UraniumToolMaterial.INSTANCE, -5, 0F, new Item.Settings().group(periodic.TOOL_GROUP));
     }
-
+    // Reinforced Tool properties
     public static class ReinforcedUraniumPickaxeItem extends PickaxeItem {
         public ReinforcedUraniumPickaxeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
             super(material, attackDamage, attackSpeed, settings);
