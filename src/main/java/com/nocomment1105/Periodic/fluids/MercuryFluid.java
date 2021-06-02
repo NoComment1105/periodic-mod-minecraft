@@ -1,6 +1,6 @@
 package com.nocomment1105.Periodic.fluids;
 
-import com.nocomment1105.Periodic.periodic;
+import com.nocomment1105.Periodic.registry.ModBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
@@ -19,15 +19,15 @@ import java.util.Random;
 public abstract class MercuryFluid extends BaseFluid {
     @Override
     public Fluid getStill() {
-        return periodic.STILL_MERCURY;
+        return ModBlocks.STILL_MERCURY;
     }
     @Override
     public Fluid getFlowing() {
-        return periodic.FLOWING_MERCURY;
+        return ModBlocks.FLOWING_MERCURY;
     }
     @Override
     public Item getBucketItem() {
-        return periodic.MERCURY_BUCKET;
+        return ModBlocks.MERCURY_BUCKET;
     }
     @Override
     public void randomDisplayTick(World world, BlockPos pos, FluidState state, Random random) {
@@ -45,7 +45,7 @@ public abstract class MercuryFluid extends BaseFluid {
     protected BlockState toBlockState(FluidState fluidState) {
         // method_15741 (in 1.16) converts the LEVEL_1_8 of the fluid state to the Level_15 the fluid block uses
         // getBlockStateLevel replaced this in 1.17pre-1+
-        return periodic.MERCURY.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(fluidState));
+        return ModBlocks.MERCURY.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(fluidState));
     }
         public static class Flowing extends MercuryFluid {
         @Override

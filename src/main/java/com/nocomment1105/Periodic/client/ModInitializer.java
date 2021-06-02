@@ -1,6 +1,6 @@
 package com.nocomment1105.Periodic.client;
 
-import com.nocomment1105.Periodic.periodic;
+import com.nocomment1105.Periodic.registry.ModBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandler;
@@ -31,8 +31,8 @@ public class ModInitializer implements ClientModInitializer {
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(POTASSIUM_LANTERN, RenderLayer.getCutout());
         // Fluid Stuff
-        setupFluidRendering(periodic.STILL_MERCURY, periodic.FLOWING_MERCURY, new Identifier("minecraft", "water"), 0x969e99);
-        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getSolid(), periodic.STILL_MERCURY, periodic.FLOWING_MERCURY);
+        setupFluidRendering(ModBlocks.STILL_MERCURY, ModBlocks.FLOWING_MERCURY, new Identifier("minecraft", "water"), 0x969e99);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getSolid(), ModBlocks.STILL_MERCURY, ModBlocks.FLOWING_MERCURY);
     }
     public static void setupFluidRendering(final Fluid still, final Fluid flowing, final Identifier textureFluidId, final int color) {
         final Identifier stillSpriteId = new Identifier(textureFluidId.getNamespace(), "block/" + textureFluidId.getPath() + "_still");

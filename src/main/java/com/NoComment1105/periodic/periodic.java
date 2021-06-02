@@ -1,32 +1,15 @@
 package com.nocomment1105.Periodic;
 
-import com.nocomment1105.Periodic.fluids.MercuryFluid;
+import com.nocomment1105.Periodic.ConfiguredFeatures.PeriodicConfiguredFeatures;
 import com.nocomment1105.Periodic.items.RegisterArmour;
 import com.nocomment1105.Periodic.registry.ModBlocks;
 import com.nocomment1105.Periodic.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
-import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.FluidBlock;
-import net.minecraft.fluid.FlowableFluid;
-import net.minecraft.item.*;
-import net.minecraft.structure.rule.BlockMatchRuleTest;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.util.registry.RegistryKey;
-import net.minecraft.world.gen.GenerationStep;
-import net.minecraft.world.gen.YOffset;
-import net.minecraft.world.gen.decorator.Decorator;
-import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
-import net.minecraft.world.gen.heightprovider.UniformHeightProvider;
 
 import static com.nocomment1105.Periodic.registry.ModItems.*;
 import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedUraniumAxeItem.REINFORCED_URANIUM_AXE;
@@ -42,55 +25,13 @@ public class periodic implements ModInitializer {
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "general"), () -> new ItemStack(ModItems.URANIUM));
     public static final ItemGroup ARMOUR_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "armour"), () -> new ItemStack(RegisterArmour.ALUMINIUM_CHESTPLATE));
     public static final ItemGroup TOOL_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "tools"), () -> new ItemStack(URANIUM_SWORD));
-    //Setting ore generation characteristics
-    public static final ConfiguredFeature<?, ?> ORE_URANIUM_ORE_OVERWORLD = Feature.ORE
-            .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.URANIUM_ORE.getDefaultState(),
-                    4)).decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(UniformHeightProvider.create
-                    (YOffset.fixed(6), YOffset.fixed(36))))).spreadHorizontally().repeat(10);
-    public static final ConfiguredFeature<?, ?> ORE_ALUMINIUM_ORE_OVERWORLD = Feature.ORE
-            .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.ALUMINIUM_ORE.getDefaultState(),
-                    12)).decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(UniformHeightProvider.create
-                    (YOffset.fixed(10), YOffset.fixed(60))))).spreadHorizontally().repeat(13);
-    public static final  ConfiguredFeature<?, ?> ORE_POTASSIUM_ORE_END = Feature.ORE
-            .configure(new OreFeatureConfig(new BlockMatchRuleTest(Blocks.END_STONE), ModBlocks.POTASSIUM_ORE.getDefaultState(),
-                    5)).decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(UniformHeightProvider.create
-                    (YOffset.fixed(10), YOffset.fixed(80))))).spreadHorizontally().repeat(10);
-    public static final ConfiguredFeature<?, ?> ORE_SILVER_ORE_NETHER = Feature.ORE
-            .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_NETHER, ModBlocks.SILVER_ORE.getDefaultState(),
-                    6)).decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(UniformHeightProvider.create
-                    (YOffset.fixed(60), YOffset.fixed(128))))).spreadHorizontally().repeat(11);
-    //fluids
-    public static FlowableFluid STILL_MERCURY;
-    public static FlowableFluid FLOWING_MERCURY;
-    public static Item MERCURY_BUCKET;
-    public static Block MERCURY;
     @Override
     public void onInitialize() {
         //initialising blocks and items
         ModItems.registerItems();
         ModBlocks.registerBlocks();
         RegisterArmour.register();
-        //registering my ore generation
-        RegistryKey<ConfiguredFeature<?, ?>> oreUraniumOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("periodic", "ore_uranium_ore_overworld"));
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreUraniumOverworld.getValue(), ORE_URANIUM_ORE_OVERWORLD);
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreUraniumOverworld);
-
-        RegistryKey<ConfiguredFeature<?, ?>> oreAluminiumOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("periodic", "ore_aluminium_ore_overworld"));
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreAluminiumOverworld.getValue(), ORE_ALUMINIUM_ORE_OVERWORLD);
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreAluminiumOverworld);
-
-        RegistryKey<ConfiguredFeature<?, ?>> orePotassiumEnd = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("periodic", "ore_potassium_ore_end"));
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, orePotassiumEnd.getValue(), ORE_POTASSIUM_ORE_END);
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES, orePotassiumEnd);
-
-        RegistryKey<ConfiguredFeature<?, ?>> oreSilverNether = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("periodic", "ore_silver_ore_nether"));
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreSilverNether.getValue(), ORE_SILVER_ORE_NETHER);
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES, oreSilverNether);
-
+        PeriodicConfiguredFeatures.register();
         // Registering Tools
         Registry.register(Registry.ITEM, new Identifier("periodic", "uranium_pickaxe"), URANIUM_PICKAXE);
         Registry.register(Registry.ITEM, new Identifier("periodic", "uranium_sword"), URANIUM_SWORD);
@@ -102,10 +43,5 @@ public class periodic implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_uranium_shovel"), REINFORCED_URANIUM_SHOVEL);
         Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_uranium_axe"), REINFORCED_URANIUM_AXE);
         Registry.register(Registry.ITEM, new Identifier("periodic","reinforced_uranium_hoe"), REINFORCED_URANIUM_HOE);
-        // fluids
-        STILL_MERCURY = Registry.register(Registry.FLUID, new Identifier("periodic", "mercury"), new MercuryFluid.Still());
-        FLOWING_MERCURY = Registry.register(Registry.FLUID, new Identifier("periodic","flowing_mercury"), new MercuryFluid.Flowing());
-        MERCURY_BUCKET = Registry.register(Registry.ITEM, new Identifier("periodic", "mercury_bucket"), new BucketItem(STILL_MERCURY, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1).group(periodic.ITEM_GROUP)));
-        MERCURY = Registry.register(Registry.BLOCK, new Identifier("periodic", "mercury"), new FluidBlock(STILL_MERCURY, FabricBlockSettings.copy(Blocks.WATER)){});
     }
 }
