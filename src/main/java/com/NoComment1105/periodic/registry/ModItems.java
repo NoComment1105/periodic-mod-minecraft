@@ -36,21 +36,22 @@ public class ModItems {
     //registering the existence of the items note that blocks need an item form too
     public static void registerItems() {
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "uranium"), URANIUM);
-        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "uranium_block"), URANIUM_BLOCK);
-        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "uranium_ore"), URANIUM_ORE);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "aluminium"), ALUMINIUM);
-        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "aluminium_block"), ALUMINIUM_BLOCK);
-        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "aluminium_ore"), ALUMINIUM_ORE);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "potassium"), POTASSIUM);
-        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "potassium_ore"), POTASSIUM_ORE);
-        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "k_lantern"), POTASSIUM_LANTERN);
-        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "steel"), STEEL);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "silver"), SILVER);
-        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "silver_block"), SILVER_BLOCK);
-        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "silver_ore"), SILVER_ORE);
-        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "logo"), LOGO);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "sulfur"), SULFUR);
+        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "steel"), STEEL);
+        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "uranium_block"), URANIUM_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "aluminium_block"), ALUMINIUM_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "silver_block"), SILVER_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "uranium_ore"), URANIUM_ORE);
+        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "aluminium_ore"), ALUMINIUM_ORE);
+        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "potassium_ore"), POTASSIUM_ORE);
+        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "silver_ore"), SILVER_ORE);
+        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "k_lantern"), POTASSIUM_LANTERN);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "matches"), MATCHES);
+        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "logo"), LOGO);
+
     }
 
     public static class UraniumPickaxeItem extends PickaxeItem {

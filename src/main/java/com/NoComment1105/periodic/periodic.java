@@ -1,13 +1,17 @@
 package com.nocomment1105.Periodic;
 
+import com.nocomment1105.Periodic.fluids.MercuryFluid;
 import com.nocomment1105.Periodic.items.RegisterArmour;
 import com.nocomment1105.Periodic.registry.ModBlocks;
 import com.nocomment1105.Periodic.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.block.FluidBlock;
+import net.minecraft.fluid.FlowableFluid;
+import net.minecraft.item.*;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
@@ -44,7 +48,11 @@ public class periodic implements ModInitializer {
     public static final ConfiguredFeature<?, ?> ORE_SILVER_ORE_NETHER = Feature.ORE
             .configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_NETHER, ModBlocks.SILVER_ORE.getDefaultState(),
                     6)).uniformRange(YOffset.fixed(60), YOffset.fixed(128)).spreadHorizontally().repeat(11);
-
+    //fluids
+    public static FlowableFluid STILL_MERCURY;
+    public static FlowableFluid FLOWING_MERCURY;
+    public static Item MERCURY_BUCKET;
+    public static Block MERCURY;
     @Override
     public void onInitialize() {
         //initialising blocks and items
@@ -66,5 +74,10 @@ public class periodic implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_uranium_shovel"), REINFORCED_URANIUM_SHOVEL);
         Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_uranium_axe"), REINFORCED_URANIUM_AXE);
         Registry.register(Registry.ITEM, new Identifier("periodic","reinforced_uranium_hoe"), REINFORCED_URANIUM_HOE);
+        // fluids
+        STILL_MERCURY = Registry.register(Registry.FLUID, new Identifier("periodic", "mercury"), new MercuryFluid.Still());
+        FLOWING_MERCURY = Registry.register(Registry.FLUID, new Identifier("periodic","flowing_mercury"), new MercuryFluid.Flowing());
+        MERCURY_BUCKET = Registry.register(Registry.ITEM, new Identifier("periodic", "mercury_bucket"), new BucketItem(STILL_MERCURY, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1).group(periodic.ITEM_GROUP)));
+        MERCURY = Registry.register(Registry.BLOCK, new Identifier("periodic", "mercury"), new FluidBlock(STILL_MERCURY, FabricBlockSettings.copy(Blocks.WATER)){});
     }
 }
