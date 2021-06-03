@@ -12,6 +12,12 @@ archivesBaseName = "${project.archives_base_name}-${project.minecraft_version}"
 version = project.mod_version
 group = project.maven_group
 
+class info {
+	// Small QOL things
+	static def baseMCversion = '1.17'
+	static def indev = true
+}
+
 repositories {
     // Add repositories to retrieve artifacts from in here.
     // You should only use this when depending on other mods because
@@ -94,9 +100,10 @@ task modrinth(type: com.modrinth.minotaur.TaskModrinthUpload, dependsOn: remapJa
 	token = System.getenv("MODRINTH_TOKEN") // Use an environment property if releasing your source code on GitHub!
 	projectId = '5XACEUIs' // The ID of your modrinth project, slugs will not work.
 	versionNumber = "Periodic $project.version" // The version of the mod to upload.
-	releaseType = "beta"
+	versionName = "[$info.baseMCversion] vgradlew$project.version"
+	releaseType = info.indev ? "beta" : "release"
 	uploadFile = remapJar // This links to a task that builds your mod jar and sets "uploadFile" to the mod jar.
-	addGameVersion('1.17') // Any minecraft version.
+	addGameVersion('1.17-pre1') // Any minecraft version.
 	addLoader('fabric') // Can be fabric or forge. Modrinth will support liteloader and rift at a later date.
 }
 def CURSEFORGE_TOKEN = System.getenv("CURSEFORGE_TOKEN")
@@ -105,7 +112,7 @@ curseforge {
 	apiKey CURSEFORGE_TOKEN == null ? "" : CURSEFORGE_TOKEN
 	project {
 		id = '470001'
-		releaseType = 'beta'
+		releaseType = info.indev ? 'beta' : "release"
 		relations {
 			requiredDependency "fabric-api" // Fabric API is required
 		}
@@ -113,7 +120,7 @@ curseforge {
 		addGameVersion "Fabric"
 
 		mainArtifact(file("${project.buildDir}/libs/${archivesBaseName}-${version}.jar")) {
-			displayName = "Periodic $project.version"
+			displayName = "[$info.baseMCversion] Periodic $project.version"
 		}
 		afterEvaluate {
 			uploadTask.dependsOn(remapJar)
