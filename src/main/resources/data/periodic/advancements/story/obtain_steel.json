@@ -20,7 +20,7 @@
       "conditions": {
         "items": [
           {
-            "items": ["periodic:steel"]
+            "item": "periodic:steel"
           }
         ]
       }

@@ -22,7 +22,7 @@
       "conditions": {
         "items": [
           {
-            "items": ["periodic:reinforced_aluminium_helmet"]
+            "item": "periodic:reinforced_aluminium_helmet"
           }
         ]
       }
@@ -32,7 +32,7 @@
       "conditions": {
         "items": [
           {
-            "items": ["periodic:reinforced_aluminium_chestplate"]
+            "item": "periodic:reinforced_aluminium_chestplate"
           }
         ]
       }
@@ -42,7 +42,7 @@
       "conditions": {
         "items": [
           {
-            "items": ["periodic:reinforced_aluminium_leggings"]
+            "item": "periodic:reinforced_aluminium_leggings"
           }
         ]
       }
@@ -52,7 +52,7 @@
       "conditions": {
         "items": [
           {
-            "items": ["periodic:reinforced_aluminium_boots"]
+            "item": "periodic:reinforced_aluminium_boots"
           }
         ]
       }

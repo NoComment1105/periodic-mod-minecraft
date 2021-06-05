@@ -21,7 +21,7 @@
       "conditions": {
         "items": [
           {
-            "items": ["periodic:aluminium"]
+            "item": "periodic:aluminium"
           }
         ]
       }
