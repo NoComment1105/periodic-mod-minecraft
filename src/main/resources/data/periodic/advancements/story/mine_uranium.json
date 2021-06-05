@@ -20,7 +20,7 @@
       "conditions": {
         "items": [
           {
-            "item": "periodic:uranium"
+            "items": ["periodic:uranium"]
           }
         ]
       }
