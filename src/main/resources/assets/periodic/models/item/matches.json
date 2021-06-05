@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:item/matches"
+    "layer0": "periodic:items/matches"
   }
 }
