@@ -1,12 +1,12 @@
 {
   "parent": "periodic:recipes/root",
   "criteria": {
-    "has_aluminium": {
+    "has_amalgam": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": ["periodic:aluminium"]
+            "items": ["periodic:gold_amalgam"]
           }
         ]
       }
@@ -14,19 +14,19 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "periodic:aluminium_block"
+        "recipe": "periodic:gold_amalgam"
       }
     }
   },
   "requirements": [
     [
-      "has_aluminium",
+      "has_amalgam",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "periodic:aluminium_block"
+      "periodic:gold_amalgam"
     ]
   }
 }

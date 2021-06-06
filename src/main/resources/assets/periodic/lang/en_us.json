@@ -54,6 +54,12 @@
   "advancements.story.kill_with_uranium_sword.description": "Kill a mod with a Uranium Sword",
   "advancements.story.obtain_steel.title": "Ahoy Alloy",
   "advancements.story.obtain_steel.description": "Craft a Steel ingot",
+  "advancements.story.gold_amalgam.title": "Golden Quicksilver",
+  "advancements.story.gold_amalgam.description": "Craft a Gold Amalgam",
+  "advancements.story.mercury_bucket.title": "Bucket o' Metal",
+  "advancements.story.mercury_bucket.description": "Pick up a bucket of Mercury",
+  "advancements.story.obtain_matches.title": "Burn Stick",
+  "advancements.story.obtain_matches.description": "Craft a match",
 
   "advancements.nether.mine_silver.title": "A Sliver of Silver",
   "advancements.nether.mine_silver.description": "Acquire Silver",
