@@ -4,7 +4,7 @@
 ![Latest Release](https://img.shields.io/github/v/release/NoComment1105/periodic-mod-fabric?label=Latest%20Release)
 [![Discord Chat](https://img.shields.io/badge/Chat%20on-Discord-7289DA)](https://discord.gg/28N2Eeq2tT)
 #### Download Counts
-[![CurseForge downloads](http://cf.way2muchnoise.eu/full_394468_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/periodic)
+[![CurseForge downloads](http://cf.way2muchnoise.eu/full_470001_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/periodic)
 [![Github all releases](https://img.shields.io/github/downloads/NoComment1105/periodic-mod-fabric/total.svg?label=Downloads%20From%20GH)](https://GitHub.com/NoComment1105/periodic-mod-fabric/releases/)
 [Modrinth Downloads](https://modrinth.com/mod/periodic-mod-fabric)
 
