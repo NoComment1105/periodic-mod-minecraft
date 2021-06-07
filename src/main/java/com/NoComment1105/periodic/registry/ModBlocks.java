@@ -39,7 +39,6 @@ public class ModBlocks {
     public static FlowableFluid FLOWING_MERCURY;
     public static Item MERCURY_BUCKET;
     public static Block MERCURY;
-    public static LakeFeature MERCURY_LAKE;
 
     //registering blocks existance, Registry.register() need doing for each block
     public static void registerBlocks() {
@@ -57,6 +56,5 @@ public class ModBlocks {
         FLOWING_MERCURY = Registry.register(Registry.FLUID, new Identifier("periodic","flowing_mercury"), new MercuryFluid.Flowing());
         MERCURY_BUCKET = Registry.register(Registry.ITEM, new Identifier("periodic", "mercury_bucket"), new BucketItem(STILL_MERCURY, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1).group(periodic.ITEM_GROUP)));
         MERCURY = Registry.register(Registry.BLOCK, new Identifier("periodic", "mercury"), new FluidBlock(STILL_MERCURY, FabricBlockSettings.copy(Blocks.WATER)){});
-        MERCURY_LAKE = Registry.register(Registry.FEATURE, new Identifier("periodic","mercury_lake"), new LakeFeature(SingleStateFeatureConfig.CODEC));
     }
 }
