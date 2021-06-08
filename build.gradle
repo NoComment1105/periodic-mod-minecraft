@@ -15,7 +15,7 @@ group = project.maven_group
 class info {
 	// Small QOL things
 	static def baseMCversion = '1.17'
-	static def indev = true
+	static def indev = false
 }
 
 repositories {
