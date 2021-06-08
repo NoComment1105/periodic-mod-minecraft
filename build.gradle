@@ -101,10 +101,10 @@ task modrinth(type: com.modrinth.minotaur.TaskModrinthUpload, dependsOn: remapJa
 	token = System.getenv("MODRINTH_TOKEN") // Use an environment property if releasing your source code on GitHub!
 	projectId = '5XACEUIs' // The ID of your modrinth project, slugs will not work.
 	versionNumber = "Periodic $project.version" // The version of the mod to upload.
-	versionName = "[$info.baseMCversion] vgradlew$project.version"
+	versionName = "[$info.baseMCversion] v$project.version"
 	releaseType = info.indev ? "beta" : "release"
 	uploadFile = remapJar // This links to a task that builds your mod jar and sets "uploadFile" to the mod jar.
-	addGameVersion('1.17-pre1') // Any minecraft version.
+	addGameVersion('1.17') // Any minecraft version.
 	addLoader('fabric') // Can be fabric or forge. Modrinth will support liteloader and rift at a later date.
 }
 def CURSEFORGE_TOKEN = System.getenv("CURSEFORGE_TOKEN")
