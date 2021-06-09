@@ -6,7 +6,6 @@
 #### Download Counts
 [![CurseForge downloads](http://cf.way2muchnoise.eu/full_470001_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/periodic)
 [![Github all releases](https://img.shields.io/github/downloads/NoComment1105/periodic-mod-fabric/total.svg?label=Downloads%20From%20GH)](https://GitHub.com/NoComment1105/periodic-mod-fabric/releases/)
-[Modrinth Downloads](https://modrinth.com/mod/periodic-mod-fabric)
 
 <a href="https://www.modrinth.com/mod/fabric-api" rel="nofollow"><img src="https://i.imgur.com/Ol1Tcf8.png" alt="Fabric Logo" width="175"></a>
 
@@ -25,6 +24,10 @@ This mod adds elements from the real world into minecraft, making the game, a bi
 * Aluminium Armour
 * Reinforced Variants of both
 * Potassium Lanterns
+* Liquid Mercury
+* Sulfur
+* Amalgams
+* Steel
 
 #### Find out more on the [Wiki!](https://github.com/NoComment1105/periodic-mod-fabric/wiki#welcome-to-the-periodic-wiki)
 
@@ -39,6 +42,8 @@ This mod adds elements from the real world into minecraft, making the game, a bi
 ### Versioning
 This mod is >=1.16.2 at it's oldest. I am **NOT** going to back-port this mod to any older versions
 I will try my hardest to updates this mod, in its latest release at the time, within a week the next version
+
+There is a 1.17 Version as of 8th June 2021
 
 <img src="https://user-images.githubusercontent.com/67918617/115963692-69eefc00-a518-11eb-9a4b-28196a8ea004.png" alt="No Forge" width="225"></a>
 
