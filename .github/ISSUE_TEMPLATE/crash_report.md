@@ -2,7 +2,7 @@
 name: Crash report
 about: Create a report to inform us of a constant crash
 title: ''
-labels: ''
+labels: crash
 assignees: ''
 
 ---
