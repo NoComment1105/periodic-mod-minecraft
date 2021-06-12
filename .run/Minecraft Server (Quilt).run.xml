@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Minecraft Server (Quilt)" type="Application" factoryName="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="16" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="MAIN_CLASS_NAME" value="org.quiltmc.devlaunchinjector.Main" />
+    <module name="periodic-mod-main.main" />
+    <option name="PROGRAM_PARAMETERS" value="nogui" />
+    <option name="VM_PARAMETERS" value="-Dquilt.dli.config=C:\Users\User\Desktop\Minecraft@@0020Modding\periodic-mod-main\.gradle\loom-cache\launch.cfg -Dquilt.dli.env=server -Dquilt.dli.main=org.quilt.loader.impl.launch.knot.KnotServer -Xmx1650M" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run/" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
