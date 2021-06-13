@@ -1,0 +1,43 @@
+{
+  "parent": "periodic:recipes/root",
+  "criteria": {
+    "has_uranium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "periodic:uranium"
+          }
+        ]
+      }
+    },
+    "has_steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "periodic:steel"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "periodic:reinforced_uranium_axe"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_uranium",
+      "has_steel",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "periodic:reinforced_uranium_axe"
+    ]
+  }
+}

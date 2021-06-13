@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "periodic:block/k_lantern"
+    },
+    "hanging=true": {
+      "model": "periodic:block/k_lantern_hanging"
+    }
+  }
+}

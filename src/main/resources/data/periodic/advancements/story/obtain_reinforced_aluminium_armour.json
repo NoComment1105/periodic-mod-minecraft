@@ -1,0 +1,69 @@
+{
+  "display": {
+    "icon": {
+      "item": "periodic:reinforced_aluminium_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": "advancements.story.obtain_reinforced_aluminium_armor.title"
+    },
+    "description": {
+      "translate": "advancements.story.obtain_reinforced_aluminium_armor.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "periodic:story/obtain_steel",
+  "criteria": {
+    "reinforced_aluminium_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["periodic:reinforced_aluminium_helmet"]
+          }
+        ]
+      }
+    },
+    "reinforced_aluminium_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["periodic:reinforced_aluminium_chestplate"]
+          }
+        ]
+      }
+    },
+    "reinforced_aluminium_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["periodic:reinforced_aluminium_leggings"]
+          }
+        ]
+      }
+    },
+    "reinforced_aluminium_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["periodic:reinforced_aluminium_boots"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "reinforced_aluminium_helmet",
+      "reinforced_aluminium_chestplate",
+      "reinforced_aluminium_leggings",
+      "reinforced_aluminium_boots"
+    ]
+  ]
+}

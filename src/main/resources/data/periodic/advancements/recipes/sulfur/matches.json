@@ -1,0 +1,32 @@
+{
+  "parent": "periodic:recipes/root",
+  "criteria": {
+    "matches": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["periodic:matches"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "periodic:matches"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "matches",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "periodic:matches"
+    ]
+  }
+}

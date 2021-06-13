@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "periodic",
+  "version": "${version}",
+  "name": "Periodic",
+  "description": "A Mod designed to add common-ish elements from the periodic table to Minecraft",
+  "authors": [
+    "NoComment1105 (Code)",
+    "ItzChazzaa (Art)",
+    "Hydra (Art)"
+  ],
+  "contact": {
+    "homepage": "https://nocomment-mc.webflow.io/",
+    "sources": "https://www.github.com/NoComment1105/periodic-mod-fabric"
+  },
+
+  "license": "lgpl-3.0",
+  "icon": "assets/periodic/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.nocomment1105.Periodic.periodic"
+    ],
+    "client": [
+      "com.nocomment1105.Periodic.client.ModInitializer"
+    ]
+  },
+  "mixins": [
+    "periodic.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": ">=1.17",
+    "java": ">=16"
+  },
+  "breaks": {
+    "quilt-loader": "*"
+  }
+}

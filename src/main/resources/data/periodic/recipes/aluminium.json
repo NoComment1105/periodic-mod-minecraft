@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "periodic:aluminium_ore"
+  },
+  "result": "periodic:aluminium",
+  "experience": 0.5,
+  "cookingtime": 200
+}
