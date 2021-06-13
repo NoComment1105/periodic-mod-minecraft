@@ -1,0 +1,34 @@
+{
+  "parent": "periodic:story/mercury_bucket",
+  "display": {
+    "icon": {
+      "item": "periodic:gold_amalgam"
+    },
+    "title": {
+      "translate": "advancements.story.gold_amalgam.title"
+    },
+    "description": {
+      "translate": "advancements.story.gold_amalgam.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "gold_amalgam": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["periodic:gold_amalgam"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "gold_amalgam"
+    ]
+  ]
+}

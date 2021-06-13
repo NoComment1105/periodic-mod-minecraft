@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "periodic:aluminium_boots"
+  },
+  "addition": {
+    "item": "periodic:steel"
+  },
+  "result": {
+    "item": "periodic:reinforced_aluminium_boots"
+  }
+}
