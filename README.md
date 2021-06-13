@@ -49,17 +49,6 @@ There is a 1.17 Version as of 8th June 2021
 
 
 ----
-#### This part requires some knowledge of coding to use, please move on at your own choice
-### Building the mod
-To build this mod in its dev version you need to follow some steps to compile it into the .jar Minecraft needs to use this mod. (Windows verison as that is my platform)
-
-#### Requirements
-You will need to have a JDK 8 or greater installed on your computer to build my mod. An easy location to acquire one of these is on [AdoptOpenJDK](https://adoptopenjdk.net)
-
-#### Compiling
-Find the place where you've cloned the repository and type in the address bar `cmd` to launch Command Prompt. In here you want to type `gradlew build`. If this is your first time building a mod on your computer, Gradle will take a bit longer to set itself up, but after that the mod will build, you will find the resulting `.jar` files in `build/gradle`. Once you have found the folder, you want to drag and drop `periodic-mod-fabric-X.X.X-SNAPSHOT.jar` into your mods directory and then you're good to go
-
-----
 
 ### Issues
 If you have discovered an issue with my mod, please do not hesitate to ask anything in my [Discord](https://discord.gg/28N2Eeq2tT) or leave an issue in my [issue tracker](https://www.github.com/NoComment1105/periodic-mod-fabric/issues) but please check for a duplicate of your issue first, thanks :)
