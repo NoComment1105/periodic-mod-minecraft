@@ -1,7 +1,7 @@
 package com.nocomment1105.Periodic;
 
-import com.nocomment1105.Periodic.ConfiguredFeatures.PeriodicConfiguredFeatures;
-import com.nocomment1105.Periodic.items.RegisterArmour;
+import com.nocomment1105.Periodic.configuredfeatures.PeriodicConfiguredFeatures;
+import com.nocomment1105.Periodic.armouritems.RegisterArmour;
 import com.nocomment1105.Periodic.registry.ModBlocks;
 import com.nocomment1105.Periodic.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -12,6 +12,12 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 import static com.nocomment1105.Periodic.registry.ModItems.*;
+import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedDiamondAxeItem.REINFORCED_DIAMOND_AXE;
+import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedDiamondHoeItem.REINFORCED_DIAMOND_HOE;
+import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedDiamondPickaxeItem.REINFORCED_DIAMOND_PICKAXE;
+import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedNetheriteAxeItem.REINFORCED_NETHERITE_AXE;
+import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedNetheriteHoeItem.REINFORCED_NETHERITE_HOE;
+import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedNetheritePickaxeItem.REINFORCED_NETHERITE_PICKAXE;
 import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedUraniumAxeItem.REINFORCED_URANIUM_AXE;
 import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedUraniumHoeItem.REINFORCED_URANIUM_HOE;
 import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedUraniumPickaxeItem.REINFORCED_URANIUM_PICKAXE;
@@ -43,5 +49,15 @@ public class periodic implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_uranium_shovel"), REINFORCED_URANIUM_SHOVEL);
         Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_uranium_axe"), REINFORCED_URANIUM_AXE);
         Registry.register(Registry.ITEM, new Identifier("periodic","reinforced_uranium_hoe"), REINFORCED_URANIUM_HOE);
+        Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_diamond_pickaxe"), REINFORCED_DIAMOND_PICKAXE);
+        Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_diamond_sword"), REINFORCED_DIAMOND_SWORD);
+        Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_diamond_shovel"), REINFORCED_DIAMOND_SHOVEL);
+        Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_diamond_axe"), REINFORCED_DIAMOND_AXE);
+        Registry.register(Registry.ITEM, new Identifier("periodic","reinforced_diamond_hoe"), REINFORCED_DIAMOND_HOE);
+        Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_netherite_pickaxe"), REINFORCED_NETHERITE_PICKAXE);
+        Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_netherite_sword"), REINFORCED_NETHERITE_SWORD);
+        Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_netherite_shovel"), REINFORCED_NETHERITE_SHOVEL);
+        Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_netherite_axe"), REINFORCED_NETHERITE_AXE);
+        Registry.register(Registry.ITEM, new Identifier("periodic","reinforced_netherite_hoe"), REINFORCED_NETHERITE_HOE);
     }
 }

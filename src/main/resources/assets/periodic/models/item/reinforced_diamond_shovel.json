@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "periodic:items/reinforced_diamond_shovel"
+  }
+}
