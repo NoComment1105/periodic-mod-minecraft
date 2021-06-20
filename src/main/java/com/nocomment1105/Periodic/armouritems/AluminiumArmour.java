@@ -1,4 +1,4 @@
-package com.nocomment1105.Periodic.items;
+package com.nocomment1105.Periodic.armouritems;
 
 import com.nocomment1105.Periodic.registry.ModItems;
 import net.minecraft.entity.EquipmentSlot;
@@ -8,9 +8,10 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
 
-public class ReinforcedAluminiumArmour implements ArmorMaterial {
-    private static final int[] BASE_DURABILITY = new int[] {424, 472, 496, 375};
-    private static final int[] PROTECTION_VALUES = new int[] {3, 4, 6, 3};
+
+public class AluminiumArmour implements ArmorMaterial {
+    private static final int[] BASE_DURABILITY = new int[] {385, 429, 451, 341};
+    private static final int[] PROTECTION_VALUES = new int[] {3, 4, 6, 2};
     @Override
     public int getDurability(EquipmentSlot slot) {
         return BASE_DURABILITY[slot.getEntitySlotId()];
@@ -23,7 +24,7 @@ public class ReinforcedAluminiumArmour implements ArmorMaterial {
 
     @Override
     public int getEnchantability() {
-        return 13;
+        return 12;
     }
 
     @Override
