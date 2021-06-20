@@ -7,7 +7,7 @@ plugins {
 class info {
 	// Small QOL things
 	static def baseMCversion = '1.17'
-	static def indev = false
+	static def indev = true
 }
 sourceCompatibility = JavaVersion.VERSION_16
 targetCompatibility = JavaVersion.VERSION_16
@@ -43,6 +43,7 @@ dependencies {
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.
 	//modRuntime "me.steinborn:lazydfu:0.1.2"
+	//modRuntime "me.jellysquid.mods:sodium-fabric-mc1.17:0.2.0+build.24"
 }
 
 processResources {
@@ -110,6 +111,7 @@ task modrinth(type: com.modrinth.minotaur.TaskModrinthUpload, dependsOn: remapJa
 	releaseType = info.indev ? "beta" : "release"
 	uploadFile = remapJar // This links to a task that builds your mod jar and sets "uploadFile" to the mod jar.
 	addGameVersion('1.17') // Any minecraft version.
+	addGameVersion('1.17.1')
 	addLoader('fabric') // Can be fabric or forge. Modrinth will support liteloader and rift at a later date.
 }
 def CURSEFORGE_TOKEN = System.getenv("CURSEFORGE_TOKEN")
@@ -123,6 +125,7 @@ curseforge {
 			requiredDependency "fabric-api" // Fabric API is required
 		}
 		addGameVersion '1.17'
+		addGameVersion '1.17.1'
 		addGameVersion "Fabric"
 
 		mainArtifact(file("${project.buildDir}/libs/${archivesBaseName}-${version}.jar")) {
