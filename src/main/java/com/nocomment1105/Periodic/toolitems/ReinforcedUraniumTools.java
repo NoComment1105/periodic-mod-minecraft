@@ -1,11 +1,11 @@
-package com.nocomment1105.Periodic.items;
+package com.nocomment1105.Periodic.toolitems;
 
 import com.nocomment1105.Periodic.registry.ModItems;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class ReinforcedUraniumToolMaterial implements ToolMaterial {
-    public static final ReinforcedUraniumToolMaterial INSTANCE = new ReinforcedUraniumToolMaterial();
+public class ReinforcedUraniumTools implements ToolMaterial {
+    public static final ReinforcedUraniumTools INSTANCE = new ReinforcedUraniumTools();
     @Override
     public int getDurability() {
         return 715;

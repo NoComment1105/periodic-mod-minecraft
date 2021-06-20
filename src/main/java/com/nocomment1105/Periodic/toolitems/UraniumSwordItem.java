@@ -1,4 +1,4 @@
-package com.nocomment1105.Periodic.items;
+package com.nocomment1105.Periodic.toolitems;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
