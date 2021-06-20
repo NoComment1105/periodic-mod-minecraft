@@ -1,4 +1,4 @@
-package com.nocomment1105.Periodic.ConfiguredFeatures;
+package com.nocomment1105.Periodic.configuredfeatures;
 
 import com.nocomment1105.Periodic.registry.ModBlocks;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
