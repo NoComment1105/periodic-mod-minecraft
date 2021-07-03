@@ -19,7 +19,10 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: 16
-      - name: Grant execute permision for gradlew
-        run: chmod +x gradlew
-      - name: Build with Gradle
+      - name: Build Artifacts
         run: ./gradlew build
+      - name: Upload build artifacts
+        uses: actions/upload-artifacts@v1
+        with:
+          name: build-artifacts
+          path: build/libs
