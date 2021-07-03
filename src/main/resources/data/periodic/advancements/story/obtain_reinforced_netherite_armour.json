@@ -1,0 +1,69 @@
+{
+  "display": {
+    "icon": {
+      "item": "periodic:reinforced_netherite_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": "advancements.story.obtain_reinforced_netherite_armor.title"
+    },
+    "description": {
+      "translate": "advancements.story.obtain_reinforced_netherite_armor.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "periodic:story/obtain_reinforced_diamond_armour",
+  "criteria": {
+    "reinforced_netherite_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["periodic:reinforced_netherite_helmet"]
+          }
+        ]
+      }
+    },
+    "reinforced_netherite_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["periodic:reinforced_netherite_chestplate"]
+          }
+        ]
+      }
+    },
+    "reinforced_netherite_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["periodic:reinforced_netherite_leggings"]
+          }
+        ]
+      }
+    },
+    "reinforced_netherite_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["periodic:reinforced_netherite_boots"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "reinforced_netherite_helmet",
+      "reinforced_netherite_chestplate",
+      "reinforced_netherite_leggings",
+      "reinforced_netherite_boots"
+    ]
+  ]
+}
