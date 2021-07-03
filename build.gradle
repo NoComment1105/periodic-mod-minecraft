@@ -136,12 +136,14 @@ curseforge {
 }
 def getVersionMetadata() {
 	def build_id = System.getenv("GITHUB_RUN_NUMBER")
-
+	def release_build = System.getenv("RELEASE_BUILD")
+	if (release_build) {
+		return ""
+	}
 	// CI builds only
 	if (build_id != null) {
 		return "build.${build_id}"
 	}
-
 	if (grgit != null) {
 		def head = grgit.head()
 		def id = head.abbreviatedId
