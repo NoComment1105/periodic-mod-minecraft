@@ -38,7 +38,7 @@ public class ReinforcedAluminiumArmour implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return "aluminium";
+        return "reinforced_aluminium";
     }
 
     @Override

@@ -37,7 +37,7 @@ public class ReinforcedNetheriteArmour implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return "netherite";
+        return "reinforced_netherite";
     }
 
     @Override
