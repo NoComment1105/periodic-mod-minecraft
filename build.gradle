@@ -8,13 +8,13 @@ plugins {
 class info {
 	// Small QOL things
 	static def baseMCversion = '1.17'
-	static def indev = true
+	static def indev = false
 }
 
 sourceCompatibility = JavaVersion.VERSION_16
 targetCompatibility = JavaVersion.VERSION_16
 
-archivesBaseName = "${project.archives_base_name}-${project.minecraft_version}-${project.mod_loader}"
+archivesBaseName = "${project.archives_base_name}-${project.mod_loader}-${project.minecraft_version}"
 version = "${project.mod_version}+${getVersionMetadata()}"
 group = project.maven_group
 
