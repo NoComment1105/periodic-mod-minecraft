@@ -37,7 +37,7 @@ public class ReinforcedDiamondArmour implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return "diamond";
+        return "reinforced_diamond";
     }
 
     @Override
