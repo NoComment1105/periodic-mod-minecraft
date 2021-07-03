@@ -26,7 +26,7 @@ import java.util.function.Function;
 
 import static com.nocomment1105.Periodic.registry.ModBlocks.POTASSIUM_LANTERN;
 
-public class ModInitializer implements ClientModInitializer {
+public class PeriodicClientMod implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(POTASSIUM_LANTERN, RenderLayer.getCutout());
