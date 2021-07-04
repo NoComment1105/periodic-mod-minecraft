@@ -1,3 +1,10 @@
+buildscript {
+	repositories {
+		maven {
+			url "https://plugins.gradle.org/m2"
+		}
+	}
+}
 plugins {
 	id 'fabric-loom' version '0.8+'
 	id 'maven-publish'
@@ -18,13 +25,7 @@ archivesBaseName = "${project.archives_base_name}-${project.mod_loader}-${projec
 version = "${project.mod_version}+${getVersionMetadata()}+unstable"
 group = project.maven_group
 
-buildscript {
-	repositories {
-		maven {
-			url "https://plugins.gradle.org/m2"
-		}
-	}
-}
+
 repositories {
     // Add repositories to retrieve artifacts from in here.
     // You should only use this when depending on other mods because
