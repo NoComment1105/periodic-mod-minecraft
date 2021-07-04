@@ -15,7 +15,7 @@ sourceCompatibility = JavaVersion.VERSION_16
 targetCompatibility = JavaVersion.VERSION_16
 
 archivesBaseName = "${project.archives_base_name}-${project.mod_loader}-${project.minecraft_version}"
-version = "${project.mod_version}+${getVersionMetadata()}"
+version = "${project.mod_version}+${getVersionMetadata()}+unstable"
 group = project.maven_group
 
 repositories {
@@ -24,6 +24,10 @@ repositories {
     // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html
     // for more information about repositories.
+	maven {
+		name 'Fabric'
+		url 'https://maven.fabricmc.net'
+	}
 }
 
 dependencies {
@@ -93,6 +97,10 @@ publishing {
 		// Notice: This block does NOT have the same function as the block in the top level.
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
+		maven {
+			name 'Fabric'
+			url 'https://maven.fabricmc.net'
+		}
 	}
 }
 task modrinth(type: com.modrinth.minotaur.TaskModrinthUpload, dependsOn: remapJar) {
@@ -134,7 +142,8 @@ curseforge {
 		forgeGradleIntegration = false
 	}
 }
-def getVersionMetadata() {
+
+Object getVersionMetadata() {
 	def build_id = System.getenv("GITHUB_RUN_NUMBER")
 
 	// CI builds only
