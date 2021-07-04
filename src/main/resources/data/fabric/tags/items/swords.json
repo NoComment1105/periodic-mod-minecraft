@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "periodic:uranium_sword",
-    "periodic:reinforced_uranium_sword"
+    "periodic:reinforced_uranium_sword",
+    "periodic:reinforced_diamond_sword",
+    "periodic:reinforced_netherite_sword"
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "periodic:uranium_hoe",
+    "periodic:reinforced_uranium_hoe",
+    "periodic:reinforced_diamond_hoe",
+    "periodic:reinforced_netherite_hoe"
+  ]
+}

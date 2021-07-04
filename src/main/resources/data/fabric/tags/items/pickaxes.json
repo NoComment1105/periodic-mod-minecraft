@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "periodic:uranium_pickaxe",
-    "periodic:reinforced_uranium_pickaxe"
+    "periodic:reinforced_uranium_pickaxe",
+    "periodic:reinforced_diamond_pickaxe",
+    "periodic:reinforced_netherite_pickaxe"
   ]
 }
