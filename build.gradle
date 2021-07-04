@@ -15,7 +15,7 @@ sourceCompatibility = JavaVersion.VERSION_16
 targetCompatibility = JavaVersion.VERSION_16
 
 archivesBaseName = "${project.archives_base_name}-${project.mod_loader}-${project.minecraft_version}"
-version = "${project.mod_version}+${getVersionMetadata()}"
+version = project.mod_version
 group = project.maven_group
 
 repositories {
@@ -133,27 +133,4 @@ curseforge {
 	options {
 		forgeGradleIntegration = false
 	}
-}
-def getVersionMetadata() {
-	def build_id = System.getenv("GITHUB_RUN_NUMBER")
-
-	// CI builds only
-	if (build_id != null) {
-		return "build.${build_id}"
-	}
-
-	if (grgit != null) {
-		def head = grgit.head()
-		def id = head.abbreviatedId
-
-		// Flag the build if the build tree is not clean
-		if (!grgit.status().clean) {
-			id += "-dirty"
-		}
-
-		return "rev.${id}"
-	}
-
-	// No tracking information could be found about the build
-	return "unknown"
 }
