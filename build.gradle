@@ -18,6 +18,13 @@ archivesBaseName = "${project.archives_base_name}-${project.mod_loader}-${projec
 version = "${project.mod_version}+${getVersionMetadata()}+unstable"
 group = project.maven_group
 
+buildscript {
+	repositories {
+		maven {
+			url "https://plugins.gradle.org/m2"
+		}
+	}
+}
 repositories {
     // Add repositories to retrieve artifacts from in here.
     // You should only use this when depending on other mods because
@@ -99,6 +106,10 @@ publishing {
 		// Notice: This block does NOT have the same function as the block in the top level.
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
+		maven {
+			name 'Fabric'
+			url 'https://maven.fabricmc.net'
+		}
 	}
 }
 task modrinth(type: com.modrinth.minotaur.TaskModrinthUpload, dependsOn: remapJar) {
