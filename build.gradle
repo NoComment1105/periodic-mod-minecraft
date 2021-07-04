@@ -106,7 +106,10 @@ task modrinth(type: com.modrinth.minotaur.TaskModrinthUpload, dependsOn: remapJa
 	releaseType = info.indev ? "beta" : "release"
 	uploadFile = remapJar // This links to a task that builds your mod jar and sets "uploadFile" to the mod jar.
 	addGameVersion('1.17') // Any minecraft version.
-	addGameVersion('1.17.1')
+	addGameVersion('1.17.1-pre1')
+	addGameVersion('1.17.1-pre2')
+	addGameVersion('1.17.1-pre3')
+	addGameVersion('1.17.1-rc1')
 	addLoader('fabric') // Can be fabric or forge. Modrinth will support liteloader and rift at a later date.
 }
 def CURSEFORGE_TOKEN = System.getenv("CURSEFORGE_TOKEN")
@@ -120,7 +123,7 @@ curseforge {
 			requiredDependency "fabric-api" // Fabric API is required
 		}
 		addGameVersion '1.17'
-		addGameVersion '1.17.1'
+		addGameVersion '1.17-Snapshot'
 		addGameVersion "Fabric"
 
 		mainArtifact(file("${project.buildDir}/libs/${archivesBaseName}-${version}.jar")) {
