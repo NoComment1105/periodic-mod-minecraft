@@ -98,6 +98,7 @@ publishing {
 			artifact(sourcesJar) {
 				builtBy remapSourcesJar
 			}
+			groupId = 'com.nocomment1105.periodic-mod-minecraft'
 		}
 	}
 
