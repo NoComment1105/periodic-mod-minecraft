@@ -28,6 +28,8 @@ repositories {
 		name 'Fabric'
 		url 'https://maven.fabricmc.net'
 	}
+	gradlePluginPortal()
+	mavenLocal()
 }
 
 dependencies {
@@ -97,10 +99,6 @@ publishing {
 		// Notice: This block does NOT have the same function as the block in the top level.
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
-		maven {
-			name 'Fabric'
-			url 'https://maven.fabricmc.net'
-		}
 	}
 }
 task modrinth(type: com.modrinth.minotaur.TaskModrinthUpload, dependsOn: remapJar) {
