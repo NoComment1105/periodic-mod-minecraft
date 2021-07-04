@@ -23,8 +23,3 @@ jobs:
         run: chmod +x gradlew
       - name: Build Artifacts
         run: ./gradlew build
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v1
-        with:
-          name: build-artifacts
-          path: build/libs
