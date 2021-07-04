@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "periodic:uranium_axe",
+    "periodic:reinforced_uranium_axe",
+    "periodic:reinforced_diamond_axe",
+    "periodic:reinforced_netherite_axe"
+  ]
+}
