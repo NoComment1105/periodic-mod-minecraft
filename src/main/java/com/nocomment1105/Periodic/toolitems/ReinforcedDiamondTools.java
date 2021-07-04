@@ -13,7 +13,7 @@ public class ReinforcedDiamondTools implements ToolMaterial {
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 7;
+        return 8;
     }
 
     @Override
@@ -28,7 +28,7 @@ public class ReinforcedDiamondTools implements ToolMaterial {
 
     @Override
     public int getEnchantability() {
-        return 11;
+        return 10;
     }
 
     @Override

@@ -13,7 +13,7 @@ public class ReinforcedNetheriteTools implements ToolMaterial {
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 7;
+        return 9;
     }
 
     @Override
@@ -23,7 +23,7 @@ public class ReinforcedNetheriteTools implements ToolMaterial {
 
     @Override
     public int getMiningLevel() {
-        return 3;
+        return 4;
     }
 
     @Override
