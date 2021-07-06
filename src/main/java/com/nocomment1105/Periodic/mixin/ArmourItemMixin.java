@@ -22,7 +22,7 @@ import java.util.UUID;
 
 @Mixin (ArmorItem.class)
 public abstract class ArmourItemMixin {
-
+    // TODO Understand everything in here
     @Shadow @Final private static UUID[] MODIFIERS;
     @Shadow @Final @Mutable private Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
     @Shadow @Final protected float knockbackResistance;

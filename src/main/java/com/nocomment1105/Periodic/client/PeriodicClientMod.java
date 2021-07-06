@@ -31,6 +31,7 @@ public class PeriodicClientMod implements ClientModInitializer {
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(POTASSIUM_LANTERN, RenderLayer.getCutout());
         // Fluid Stuff
+        // TODO more understanding this lol
         setupFluidRendering(ModBlocks.STILL_MERCURY, ModBlocks.FLOWING_MERCURY, new Identifier("minecraft", "water"), 0x969e99);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getSolid(), ModBlocks.STILL_MERCURY, ModBlocks.FLOWING_MERCURY);
     }

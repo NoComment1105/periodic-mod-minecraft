@@ -29,6 +29,7 @@ public abstract class MercuryFluid extends BaseFluid {
     public Item getBucketItem() {
         return ModBlocks.MERCURY_BUCKET;
     }
+    // TODO Understand everything from here to the next class
     @Override
     public void randomDisplayTick(World world, BlockPos pos, FluidState state, Random random) {
         if (!state.isStill() && !(Boolean)state.get(FALLING)) {
