@@ -10,7 +10,7 @@
     "Hydra (Art)"
   ],
   "contact": {
-    "homepage": "https://nocomment-mc.webflow.io/",
+    "homepage": "https://nocomment1105.github.io/",
     "sources": "https://www.github.com/NoComment1105/periodic-mod-fabric"
   },
 
@@ -19,10 +19,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.nocomment1105.Periodic.periodic"
+      "me.nocomment1105.Periodic.periodic"
     ],
     "client": [
-      "com.nocomment1105.Periodic.client.PeriodicClientMod"
+      "me.nocomment1105.Periodic.client.PeriodicClientMod"
     ]
   },
   "mixins": [
