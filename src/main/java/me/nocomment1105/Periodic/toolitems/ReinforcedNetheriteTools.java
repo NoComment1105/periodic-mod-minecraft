@@ -1,4 +1,4 @@
-package com.nocomment1105.Periodic.toolitems;
+package me.nocomment1105.Periodic.toolitems;
 
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;

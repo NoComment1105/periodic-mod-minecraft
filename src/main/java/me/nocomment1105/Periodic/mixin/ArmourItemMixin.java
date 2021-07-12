@@ -1,8 +1,8 @@
-package com.nocomment1105.Periodic.mixin;
+package me.nocomment1105.Periodic.mixin;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
-import com.nocomment1105.Periodic.armouritems.RegisterArmour;
+import me.nocomment1105.Periodic.armouritems.RegisterArmour;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;

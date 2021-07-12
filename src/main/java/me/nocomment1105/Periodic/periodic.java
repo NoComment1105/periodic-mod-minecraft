@@ -1,9 +1,9 @@
-package com.nocomment1105.Periodic;
+package me.nocomment1105.Periodic;
 
-import com.nocomment1105.Periodic.configuredfeatures.PeriodicConfiguredFeatures;
-import com.nocomment1105.Periodic.armouritems.RegisterArmour;
-import com.nocomment1105.Periodic.registry.ModBlocks;
-import com.nocomment1105.Periodic.registry.ModItems;
+import me.nocomment1105.Periodic.configuredfeatures.PeriodicConfiguredFeatures;
+import me.nocomment1105.Periodic.armouritems.RegisterArmour;
+import me.nocomment1105.Periodic.registry.ModBlocks;
+import me.nocomment1105.Periodic.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
@@ -11,19 +11,19 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-import static com.nocomment1105.Periodic.registry.ModItems.*;
-import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedDiamondAxeItem.REINFORCED_DIAMOND_AXE;
-import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedDiamondHoeItem.REINFORCED_DIAMOND_HOE;
-import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedDiamondPickaxeItem.REINFORCED_DIAMOND_PICKAXE;
-import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedNetheriteAxeItem.REINFORCED_NETHERITE_AXE;
-import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedNetheriteHoeItem.REINFORCED_NETHERITE_HOE;
-import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedNetheritePickaxeItem.REINFORCED_NETHERITE_PICKAXE;
-import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedUraniumAxeItem.REINFORCED_URANIUM_AXE;
-import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedUraniumHoeItem.REINFORCED_URANIUM_HOE;
-import static com.nocomment1105.Periodic.registry.ModItems.ReinforcedUraniumPickaxeItem.REINFORCED_URANIUM_PICKAXE;
-import static com.nocomment1105.Periodic.registry.ModItems.UraniumAxeItem.URANIUM_AXE;
-import static com.nocomment1105.Periodic.registry.ModItems.UraniumHoeItem.URANIUM_HOE;
-import static com.nocomment1105.Periodic.registry.ModItems.UraniumPickaxeItem.URANIUM_PICKAXE;
+import static me.nocomment1105.Periodic.registry.ModItems.*;
+import static me.nocomment1105.Periodic.registry.ModItems.ReinforcedDiamondAxeItem.REINFORCED_DIAMOND_AXE;
+import static me.nocomment1105.Periodic.registry.ModItems.ReinforcedDiamondHoeItem.REINFORCED_DIAMOND_HOE;
+import static me.nocomment1105.Periodic.registry.ModItems.ReinforcedDiamondPickaxeItem.REINFORCED_DIAMOND_PICKAXE;
+import static me.nocomment1105.Periodic.registry.ModItems.ReinforcedNetheriteAxeItem.REINFORCED_NETHERITE_AXE;
+import static me.nocomment1105.Periodic.registry.ModItems.ReinforcedNetheriteHoeItem.REINFORCED_NETHERITE_HOE;
+import static me.nocomment1105.Periodic.registry.ModItems.ReinforcedNetheritePickaxeItem.REINFORCED_NETHERITE_PICKAXE;
+import static me.nocomment1105.Periodic.registry.ModItems.ReinforcedUraniumAxeItem.REINFORCED_URANIUM_AXE;
+import static me.nocomment1105.Periodic.registry.ModItems.ReinforcedUraniumHoeItem.REINFORCED_URANIUM_HOE;
+import static me.nocomment1105.Periodic.registry.ModItems.ReinforcedUraniumPickaxeItem.REINFORCED_URANIUM_PICKAXE;
+import static me.nocomment1105.Periodic.registry.ModItems.UraniumAxeItem.URANIUM_AXE;
+import static me.nocomment1105.Periodic.registry.ModItems.UraniumHoeItem.URANIUM_HOE;
+import static me.nocomment1105.Periodic.registry.ModItems.UraniumPickaxeItem.URANIUM_PICKAXE;
 
 public class periodic implements ModInitializer {
     public static final String MOD_ID = "periodic";
