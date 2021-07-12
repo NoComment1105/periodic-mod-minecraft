@@ -1,7 +1,7 @@
-package com.nocomment1105.Periodic.registry;
+package me.nocomment1105.Periodic.registry;
 
 import com.nocomment1105.Periodic.toolitems.*;
-import com.nocomment1105.Periodic.periodic;
+import me.nocomment1105.Periodic.periodic;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;

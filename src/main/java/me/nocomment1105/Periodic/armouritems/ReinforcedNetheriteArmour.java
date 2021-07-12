@@ -1,4 +1,4 @@
-package com.nocomment1105.Periodic.armouritems;
+package me.nocomment1105.Periodic.armouritems;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
@@ -7,8 +7,8 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
-public class ReinforcedDiamondArmour implements ArmorMaterial {
-    private static final int[] BASE_DURABILITY = new int[] {472, 545, 580, 399};
+public class ReinforcedNetheriteArmour implements ArmorMaterial {
+    private static final int[] BASE_DURABILITY = new int[] {529, 611, 651, 448};
     private static final int[] PROTECTION_VALUES = new int[] {3, 6, 8, 3};
     @Override
     public int getDurability(EquipmentSlot slot) {
@@ -22,31 +22,31 @@ public class ReinforcedDiamondArmour implements ArmorMaterial {
 
     @Override
     public int getEnchantability() {
-        return 10;
+        return 15;
     }
 
     @Override
     public SoundEvent getEquipSound() {
-        return SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND;
+        return SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(Items.DIAMOND);
+        return Ingredient.ofItems(Items.NETHERITE_INGOT);
     }
 
     @Override
     public String getName() {
-        return "reinforced_diamond";
+        return "reinforced_netherite";
     }
 
     @Override
     public float getToughness() {
-        return 2.5f;
+        return 3.5f;
     }
 
     @Override
     public float getKnockbackResistance() {
-        return 0;
+        return 0.15f;
     }
 }

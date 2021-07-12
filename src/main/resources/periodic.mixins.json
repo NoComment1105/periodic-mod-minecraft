@@ -4,7 +4,7 @@
   "package": "com.nocomment1105.Periodic.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "ArmourItemMixin"
+    "mee.nocomment1105.Periodic.mixin.ArmourItemMixin"
   ],
   "client": [],
   "server": [],

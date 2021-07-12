@@ -1,33 +1,38 @@
-package com.nocomment1105.Periodic.toolitems;
+package me.nocomment1105.Periodic.toolitems;
 
-import com.nocomment1105.Periodic.registry.ModItems;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class UraniumTools implements ToolMaterial {
-    public static final UraniumTools INSTANCE = new UraniumTools();
+public class ReinforcedDiamondTools implements ToolMaterial {
+    public static final ReinforcedDiamondTools INSTANCE = new ReinforcedDiamondTools();
     @Override
     public int getDurability() {
-        return 650;
+        return 1717;
     }
+
     @Override
     public float getMiningSpeedMultiplier() {
-        return 7.0F;
+        return 8;
     }
+
     @Override
     public float getAttackDamage() {
-        return 5.0F;
+        return 7;
     }
+
     @Override
     public int getMiningLevel() {
-        return 2;
+        return 3;
     }
+
     @Override
     public int getEnchantability() {
-        return 15;
+        return 10;
     }
+
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ModItems.URANIUM);
+        return Ingredient.ofItems(Items.DIAMOND);
     }
 }

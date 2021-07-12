@@ -1,6 +1,6 @@
-package com.nocomment1105.Periodic.toolitems;
+package me.nocomment1105.Periodic.toolitems;
 
-import com.nocomment1105.Periodic.registry.ModItems;
+import me.nocomment1105.Periodic.registry.ModItems;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 

@@ -1,6 +1,6 @@
-package com.nocomment1105.Periodic.armouritems;
+package me.nocomment1105.Periodic.armouritems;
 
-import com.nocomment1105.Periodic.periodic;
+import me.nocomment1105.Periodic.periodic;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
