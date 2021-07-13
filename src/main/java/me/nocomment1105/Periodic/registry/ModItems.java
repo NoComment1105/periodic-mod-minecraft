@@ -1,6 +1,6 @@
 package me.nocomment1105.Periodic.registry;
 
-import com.nocomment1105.Periodic.toolitems.*;
+import me.nocomment1105.Periodic.toolitems.*;
 import me.nocomment1105.Periodic.periodic;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
