@@ -1,11 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.nocomment1105.Periodic.mixin",
+  "package": "me.nocomment1105.Periodic.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "mee.nocomment1105.Periodic.mixin.ArmourItemMixin"
-  ],
+    "ArmourItemMixin"
+    ],
   "client": [],
   "server": [],
   "injectors": {
