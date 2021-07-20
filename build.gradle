@@ -1,3 +1,5 @@
+import com.modrinth.minotaur.TaskModrinthUpload
+
 plugins {
 	id 'org.quiltmc.loom' version '0.8+'
 	id 'maven-publish'
@@ -98,7 +100,7 @@ publishing {
 		// retrieving dependencies.
 	}
 }
-task modrinth(type: com.modrinth.minotaur.TaskModrinthUpload, dependsOn: remapJar) {
+task modrinth(type: TaskModrinthUpload, dependsOn: remapJar) {
 	onlyIf {
 		System.getenv("MODRINTH_TOKEN")
 	}
