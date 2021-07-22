@@ -1,15 +1,17 @@
-package me.nocomment1105.Periodic.armouritems;
+package io.github.nocomment1105.Periodic.armouritems;
 
+import io.github.nocomment1105.Periodic.registry.ModItems;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
-public class ReinforcedDiamondArmour implements ArmorMaterial {
-    private static final int[] BASE_DURABILITY = new int[] {472, 545, 580, 399};
-    private static final int[] PROTECTION_VALUES = new int[] {3, 6, 8, 3};
+
+
+public class AluminiumArmour implements ArmorMaterial {
+    private static final int[] BASE_DURABILITY = new int[] {385, 429, 451, 341};
+    private static final int[] PROTECTION_VALUES = new int[] {3, 4, 6, 2};
     @Override
     public int getDurability(EquipmentSlot slot) {
         return BASE_DURABILITY[slot.getEntitySlotId()];
@@ -22,27 +24,27 @@ public class ReinforcedDiamondArmour implements ArmorMaterial {
 
     @Override
     public int getEnchantability() {
-        return 10;
+        return 12;
     }
 
     @Override
     public SoundEvent getEquipSound() {
-        return SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND;
+        return SoundEvents.ITEM_ARMOR_EQUIP_IRON;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(Items.DIAMOND);
+        return Ingredient.ofItems(ModItems.ALUMINIUM);
     }
 
     @Override
     public String getName() {
-        return "reinforced_diamond";
+        return "aluminium";
     }
 
     @Override
     public float getToughness() {
-        return 2.5f;
+        return 0.0F;
     }
 
     @Override

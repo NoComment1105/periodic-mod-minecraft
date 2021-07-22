@@ -1,17 +1,15 @@
-package me.nocomment1105.Periodic.armouritems;
+package io.github.nocomment1105.Periodic.armouritems;
 
-import me.nocomment1105.Periodic.registry.ModItems;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
-
-
-public class AluminiumArmour implements ArmorMaterial {
-    private static final int[] BASE_DURABILITY = new int[] {385, 429, 451, 341};
-    private static final int[] PROTECTION_VALUES = new int[] {3, 4, 6, 2};
+public class ReinforcedNetheriteArmour implements ArmorMaterial {
+    private static final int[] BASE_DURABILITY = new int[] {529, 611, 651, 448};
+    private static final int[] PROTECTION_VALUES = new int[] {3, 6, 8, 3};
     @Override
     public int getDurability(EquipmentSlot slot) {
         return BASE_DURABILITY[slot.getEntitySlotId()];
@@ -24,31 +22,31 @@ public class AluminiumArmour implements ArmorMaterial {
 
     @Override
     public int getEnchantability() {
-        return 12;
+        return 15;
     }
 
     @Override
     public SoundEvent getEquipSound() {
-        return SoundEvents.ITEM_ARMOR_EQUIP_IRON;
+        return SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ModItems.ALUMINIUM);
+        return Ingredient.ofItems(Items.NETHERITE_INGOT);
     }
 
     @Override
     public String getName() {
-        return "aluminium";
+        return "reinforced_netherite";
     }
 
     @Override
     public float getToughness() {
-        return 0.0F;
+        return 3.5f;
     }
 
     @Override
     public float getKnockbackResistance() {
-        return 0;
+        return 0.15f;
     }
 }

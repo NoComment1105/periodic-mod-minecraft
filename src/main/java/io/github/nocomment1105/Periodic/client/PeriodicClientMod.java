@@ -1,6 +1,6 @@
-package me.nocomment1105.Periodic.client;
+package io.github.nocomment1105.Periodic.client;
 
-import me.nocomment1105.Periodic.registry.ModBlocks;
+import io.github.nocomment1105.Periodic.registry.ModBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandler;
@@ -24,12 +24,10 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Function;
 
-import static me.nocomment1105.Periodic.registry.ModBlocks.POTASSIUM_LANTERN;
-
 public class PeriodicClientMod implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        BlockRenderLayerMap.INSTANCE.putBlock(POTASSIUM_LANTERN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTASSIUM_LANTERN, RenderLayer.getCutout());
         // Fluid Stuff
         // TODO more understanding this lol
         setupFluidRendering(ModBlocks.STILL_MERCURY, ModBlocks.FLOWING_MERCURY, new Identifier("minecraft", "water"), 0x969e99);

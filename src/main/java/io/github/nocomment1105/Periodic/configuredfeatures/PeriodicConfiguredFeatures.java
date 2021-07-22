@@ -1,6 +1,6 @@
-package me.nocomment1105.Periodic.configuredfeatures;
+package io.github.nocomment1105.Periodic.configuredfeatures;
 
-import me.nocomment1105.Periodic.registry.ModBlocks;
+import io.github.nocomment1105.Periodic.registry.ModBlocks;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.block.Blocks;

@@ -1,6 +1,6 @@
-package me.nocomment1105.Periodic.fluids;
+package io.github.nocomment1105.Periodic.fluids;
 
-import me.nocomment1105.Periodic.registry.ModBlocks;
+import io.github.nocomment1105.Periodic.registry.ModBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;

@@ -1,7 +1,7 @@
-package me.nocomment1105.Periodic.registry;
+package io.github.nocomment1105.Periodic.registry;
 
-import me.nocomment1105.Periodic.fluids.MercuryFluid;
-import me.nocomment1105.Periodic.periodic;
+import io.github.nocomment1105.Periodic.periodic;
+import io.github.nocomment1105.Periodic.fluids.MercuryFluid;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.*;
