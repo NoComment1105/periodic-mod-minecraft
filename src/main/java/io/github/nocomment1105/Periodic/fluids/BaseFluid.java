@@ -1,4 +1,4 @@
-package me.nocomment1105.Periodic.fluids;
+package io.github.nocomment1105.Periodic.fluids;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

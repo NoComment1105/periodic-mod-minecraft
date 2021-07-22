@@ -1,14 +1,14 @@
-package me.nocomment1105.Periodic.toolitems;
+package io.github.nocomment1105.Periodic.toolitems;
 
-import me.nocomment1105.Periodic.registry.ModItems;
+import io.github.nocomment1105.Periodic.registry.ModItems;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class UraniumTools implements ToolMaterial {
-    public static final UraniumTools INSTANCE = new UraniumTools();
+public class ReinforcedUraniumTools implements ToolMaterial {
+    public static final ReinforcedUraniumTools INSTANCE = new ReinforcedUraniumTools();
     @Override
     public int getDurability() {
-        return 650;
+        return 715;
     }
     @Override
     public float getMiningSpeedMultiplier() {
@@ -20,11 +20,11 @@ public class UraniumTools implements ToolMaterial {
     }
     @Override
     public int getMiningLevel() {
-        return 2;
+        return 3;
     }
     @Override
     public int getEnchantability() {
-        return 15;
+        return 16;
     }
     @Override
     public Ingredient getRepairIngredient() {

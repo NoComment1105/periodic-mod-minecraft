@@ -21,10 +21,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "me.nocomment1105.Periodic.periodic"
+      "io.github.nocomment1105.Periodic.periodic"
     ],
     "client": [
-      "me.nocomment1105.Periodic.client.PeriodicClientMod"
+      "io.github.nocomment1105.Periodic.client.PeriodicClientMod"
     ]
   },
   "mixins": [
