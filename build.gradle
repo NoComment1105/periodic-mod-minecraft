@@ -1,11 +1,10 @@
-import com.modrinth.minotaur.TaskModrinthUpload
-
 plugins {
 	id 'fabric-loom' version '0.8+'
 	id 'maven-publish'
 	id "com.modrinth.minotaur" version "1.1.0"
 	id "com.matthewprenger.cursegradle" version "1.4.0"
 }
+def ENV = System.getenv()
 class info {
 	// Small QOL things
 	static def baseMCversion = '1.17'
@@ -94,7 +93,7 @@ publishing {
 		// retrieving dependencies.
 	}
 }
-task modrinth(type: TaskModrinthUpload, dependsOn: remapJar) {
+task modrinth(type: com.modrinth.minotaur.TaskModrinthUpload, dependsOn: remapJar) {
 	onlyIf {
 		System.getenv("MODRINTH_TOKEN")
 	}
@@ -103,6 +102,7 @@ task modrinth(type: TaskModrinthUpload, dependsOn: remapJar) {
 	versionNumber = "Periodic $project.version" // The version of the mod to upload.
 	versionName = "[$info.baseMCversion] v$project.version"
 	releaseType = info.indev ? "beta" : "release"
+	changelog = ENV.CHANGELOG ?: "No Changelog Provided"
 	uploadFile = remapJar // This links to a task that builds your mod jar and sets "uploadFile" to the mod jar.
 	addGameVersion('1.17') // Any minecraft version.
 	addGameVersion('1.17.1')
@@ -114,6 +114,7 @@ curseforge {
 	apiKey CURSEFORGE_TOKEN == null ? "" : CURSEFORGE_TOKEN
 	project {
 		id = '470001'
+		changelog = ENV.CHANGELOG ?: "No Changelog Provided"
 		releaseType = info.indev ? 'beta' : "release"
 		relations {
 			requiredDependency "fabric-api" // Fabric API is required
