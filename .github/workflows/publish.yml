@@ -18,7 +18,7 @@ jobs:
         id: changelog
         with:
           context: changelog
-          workflow_id: release.yml
+          workflow_id: publish.yml
       - uses: gradle/wrapper-validation-action@v1
       - run: ./gradlew build curseforge modrinth --stacktrace
         env:
