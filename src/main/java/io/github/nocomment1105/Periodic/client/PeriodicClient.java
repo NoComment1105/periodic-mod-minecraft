@@ -24,10 +24,12 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Function;
 
-public class PeriodicClientMod implements ClientModInitializer {
+public class PeriodicClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTASSIUM_LANTERN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTASSIUM_TORCH, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTASSIUM_WALL_TORCH, RenderLayer.getCutout());
         // Fluid Stuff
         // TODO more understanding this lol
         setupFluidRendering(ModBlocks.STILL_MERCURY, ModBlocks.FLOWING_MERCURY, new Identifier("minecraft", "water"), 0x969e99);

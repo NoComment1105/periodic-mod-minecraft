@@ -24,7 +24,7 @@
       "io.github.nocomment1105.Periodic.periodic"
     ],
     "client": [
-      "io.github.nocomment1105.Periodic.client.PeriodicClientMod"
+      "io.github.nocomment1105.Periodic.client.PeriodicClient"
     ]
   },
   "mixins": [
