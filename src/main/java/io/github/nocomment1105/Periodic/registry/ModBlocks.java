@@ -1,7 +1,9 @@
 package io.github.nocomment1105.Periodic.registry;
 
-import io.github.nocomment1105.Periodic.periodic;
+import io.github.nocomment1105.Periodic.block.PeriodicTorchBlock;
+import io.github.nocomment1105.Periodic.block.PeriodicWallTorchBlock;
 import io.github.nocomment1105.Periodic.fluids.MercuryFluid;
+import io.github.nocomment1105.Periodic.periodic;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.*;
@@ -9,6 +11,7 @@ import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -32,6 +35,12 @@ public class ModBlocks {
     //Lantern
     public static final LanternBlock POTASSIUM_LANTERN = new LanternBlock(AbstractBlock.Settings.of(Material.METAL).requiresTool()
             .strength(3.5F).sounds(BlockSoundGroup.LANTERN).luminance((state) -> 15).nonOpaque());
+    //Torches
+    public static final PeriodicTorchBlock POTASSIUM_TORCH = new PeriodicTorchBlock(FabricBlockSettings.of(Material.DECORATION).noCollision()
+            .breakInstantly().luminance((state) -> {return 14;}).sounds(BlockSoundGroup.WOOD), ParticleTypes.FLAME);
+
+    public static final WallTorchBlock POTASSIUM_WALL_TORCH = new PeriodicWallTorchBlock(FabricBlockSettings.copyOf(POTASSIUM_TORCH)
+            , ParticleTypes.FLAME);
     //fluids
     public static FlowableFluid STILL_MERCURY;
     public static FlowableFluid FLOWING_MERCURY;
@@ -54,5 +63,8 @@ public class ModBlocks {
         FLOWING_MERCURY = Registry.register(Registry.FLUID, new Identifier("periodic","flowing_mercury"), new MercuryFluid.Flowing());
         MERCURY_BUCKET = Registry.register(Registry.ITEM, new Identifier("periodic", "mercury_bucket"), new BucketItem(STILL_MERCURY, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1).group(periodic.ITEM_GROUP)));
         MERCURY = Registry.register(Registry.BLOCK, new Identifier("periodic", "mercury"), new FluidBlock(STILL_MERCURY, FabricBlockSettings.copy(Blocks.WATER)){});
+        // Torch
+        Registry.register(Registry.BLOCK, new Identifier(periodic.MOD_ID, "potassium_torch"), POTASSIUM_TORCH);
+        Registry.register(Registry.BLOCK, new Identifier(periodic.MOD_ID, "potassium_wall_torch"), POTASSIUM_WALL_TORCH);
     }
 }

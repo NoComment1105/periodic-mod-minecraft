@@ -2,6 +2,8 @@ package io.github.nocomment1105.Periodic.registry;
 
 import io.github.nocomment1105.Periodic.periodic;
 import io.github.nocomment1105.Periodic.toolitems.*;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.block.Block;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -59,6 +61,10 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "k_lantern"), POTASSIUM_LANTERN);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "matches"), MATCHES);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "logo"), LOGO);
+        // Torch
+        Registry.register(Registry.ITEM, new Identifier("periodic", "potassium_torch"), (BlockItem)(new
+                WallStandingBlockItem(ModBlocks.POTASSIUM_TORCH, ModBlocks.POTASSIUM_WALL_TORCH, new FabricItemSettings()
+                .group(periodic.ITEM_GROUP))));
 
     }
 

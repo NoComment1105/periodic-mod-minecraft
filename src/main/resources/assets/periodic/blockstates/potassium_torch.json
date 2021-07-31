@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "periodic:block/potassium_torch"
+    }
+  }
+}

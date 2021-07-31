@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "C",
+    "/"
+  ],
+  "key": {
+    "#": {
+      "item": "periodic:potassium"
+    },
+    "C": {
+      "item": "minecraft:coal"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "periodic:potassium_torch",
+    "count": 4
+  }
+}

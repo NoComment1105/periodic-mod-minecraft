@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "periodic:block/potassium_wall_torch"
+    },
+    "facing=north": {
+      "model": "periodic:block/potassium_wall_torch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "periodic:block/potassium_wall_torch",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "periodic:block/potassium_wall_torch",
+      "y": 180
+    }
+  }
+}
