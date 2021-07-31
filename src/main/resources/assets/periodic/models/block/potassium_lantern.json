@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_lantern",
   "textures": {
-    "lantern": "periodic:blocks/k_lantern"
+    "lantern": "periodic:blocks/potassium_lantern"
   }
 }

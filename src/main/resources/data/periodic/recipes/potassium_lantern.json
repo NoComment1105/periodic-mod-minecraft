@@ -1,8 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
+    "###",
     "#P#",
-    "#T#",
     "###"
   ],
   "key": {
@@ -10,14 +10,11 @@
       "item": "minecraft:iron_nugget"
     },
     "P": {
-      "item": "periodic:potassium"
-    },
-    "T": {
-      "item": "minecraft:torch"
+      "item": "periodic:potassium_torch"
     }
   },
   "result": {
-    "item": "periodic:k_lantern",
+    "item": "periodic:potassium_lantern",
     "count": 1
   }
 }

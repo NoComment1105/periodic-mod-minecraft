@@ -58,7 +58,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "aluminium_ore"), ALUMINIUM_ORE);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "potassium_ore"), POTASSIUM_ORE);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "silver_ore"), SILVER_ORE);
-        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "k_lantern"), POTASSIUM_LANTERN);
+        Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "potassium_lantern"), POTASSIUM_LANTERN);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "matches"), MATCHES);
         Registry.register(Registry.ITEM, new Identifier(periodic.MOD_ID, "logo"), LOGO);
         // Torch

@@ -11,6 +11,7 @@ import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.item.PickaxeItem;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
@@ -33,11 +34,11 @@ public class ModBlocks {
     public static final Block SILVER_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool().strength(3f, 5f).sounds(BlockSoundGroup.STONE));
     //Lantern
-    public static final LanternBlock POTASSIUM_LANTERN = new LanternBlock(AbstractBlock.Settings.of(Material.METAL).requiresTool()
+    public static final LanternBlock POTASSIUM_LANTERN = new LanternBlock(FabricBlockSettings.of(Material.METAL).breakByTool(FabricToolTags.PICKAXES, 0)
             .strength(3.5F).sounds(BlockSoundGroup.LANTERN).luminance((state) -> 15).nonOpaque());
     //Torches
     public static final PeriodicTorchBlock POTASSIUM_TORCH = new PeriodicTorchBlock(FabricBlockSettings.of(Material.DECORATION).noCollision()
-            .breakInstantly().luminance((state) -> {return 14;}).sounds(BlockSoundGroup.WOOD), ParticleTypes.FLAME);
+            .breakInstantly().luminance((state) -> 14).sounds(BlockSoundGroup.WOOD), ParticleTypes.FLAME);
 
     public static final WallTorchBlock POTASSIUM_WALL_TORCH = new PeriodicWallTorchBlock(FabricBlockSettings.copyOf(POTASSIUM_TORCH)
             , ParticleTypes.FLAME);
@@ -55,7 +56,7 @@ public class ModBlocks {
         Registry.register(Registry.BLOCK, new Identifier(periodic.MOD_ID, "aluminium_block"), ALUMINIUM_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(periodic.MOD_ID, "aluminium_ore"), ALUMINIUM_ORE);
         Registry.register(Registry.BLOCK, new Identifier(periodic.MOD_ID, "potassium_ore"), POTASSIUM_ORE);
-        Registry.register(Registry.BLOCK, new Identifier(periodic.MOD_ID, "k_lantern"), POTASSIUM_LANTERN);
+        Registry.register(Registry.BLOCK, new Identifier(periodic.MOD_ID, "potassium_lantern"), POTASSIUM_LANTERN);
         Registry.register(Registry.BLOCK, new Identifier(periodic.MOD_ID, "silver_block"), SILVER_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(periodic.MOD_ID, "silver_ore"), SILVER_ORE);
         // fluids

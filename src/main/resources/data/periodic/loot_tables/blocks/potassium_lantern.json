@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "periodic:k_lantern"
+          "name": "periodic:potassium_lantern"
         }
       ],
       "conditions": [

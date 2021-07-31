@@ -54,7 +54,8 @@
   "block.periodic.silver_block": "Block of Silver",
   "block.periodic.silver_ore": "Silver Ore",
   "block.periodic.potassium_ore": "Potassium Ore",
-  "block.periodic.k_lantern": "Potassium Lantern",
+  "block.periodic.potassium_lantern": "Potassium Lantern",
+  "block.periodic.potassium_torch": "Potassium Torch",
 
   "itemGroup.periodic.general": "Periodic Items",
   "itemGroup.periodic.armour": "Periodic Armour",
