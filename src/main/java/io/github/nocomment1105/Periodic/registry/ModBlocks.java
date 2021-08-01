@@ -17,6 +17,8 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import static io.github.nocomment1105.Periodic.registry.ModParticles.*;
+
 public class ModBlocks {
     //creating a block NEED REPEATING FOR EACH BLOCK
     public static final Block URANIUM_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).breakByTool(FabricToolTags.PICKAXES, 2)
@@ -38,10 +40,10 @@ public class ModBlocks {
             .strength(3.5F).sounds(BlockSoundGroup.LANTERN).luminance((state) -> 15).nonOpaque());
     //Torches
     public static final PeriodicTorchBlock POTASSIUM_TORCH = new PeriodicTorchBlock(FabricBlockSettings.of(Material.DECORATION).noCollision()
-            .breakInstantly().luminance((state) -> 14).sounds(BlockSoundGroup.WOOD), ParticleTypes.FLAME);
+            .breakInstantly().luminance((state) -> 14).sounds(BlockSoundGroup.WOOD), POTASSIUM_FLAME);
 
     public static final WallTorchBlock POTASSIUM_WALL_TORCH = new PeriodicWallTorchBlock(FabricBlockSettings.copyOf(POTASSIUM_TORCH)
-            , ParticleTypes.FLAME);
+            , POTASSIUM_FLAME);
     //fluids
     public static FlowableFluid STILL_MERCURY;
     public static FlowableFluid FLOWING_MERCURY;

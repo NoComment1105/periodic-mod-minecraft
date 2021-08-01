@@ -60,4 +60,7 @@ public class periodic implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("periodic", "reinforced_netherite_axe"), REINFORCED_NETHERITE_AXE);
         Registry.register(Registry.ITEM, new Identifier("periodic","reinforced_netherite_hoe"), REINFORCED_NETHERITE_HOE);
     }
+    public static Identifier id(String path) {
+        return new Identifier(MOD_ID, path);
+    }
 }
